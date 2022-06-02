@@ -1,0 +1,213 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+    background-size: cover;
+}
+
+.error {
+    color: #ff565d;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(359deg);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f229b+6,143fda+56,1035c8+83,5a7df0+99 */
+    background: rgb(15,34,155); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(15,34,155,1) 6%, rgba(20,63,218,1) 56%, rgba(16,53,200,1) 83%, rgba(90,125,240,1) 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(15,34,155,1) 6%,rgba(20,63,218,1) 56%,rgba(16,53,200,1) 83%,rgba(90,125,240,1) 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #0069af 6%,#0069af 56%,#0069af 83%,#0069af 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f229b', endColorstr='#5a7df0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.login {
+    border-radius: 2px 2px 5px 5px;
+    padding: 10px 20px 20px 20px;
+    border: solid 1px #005a95;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    /* padding-bottom: 80px;*/
+    box-shadow: 2px 1px 18px #002c4a;
+    background: rgb(15,34,155);
+    background: -moz-linear-gradient(45deg, rgba(15,34,155,1) 6%, rgba(20,63,218,1) 56%);
+    background: -webkit-linear-gradient(45deg, rgba(15,34,155,1) 6%,rgba(20,63,218,1) 56%);
+    background: linear-gradient(45deg, #0069af 6%,#0069af 56%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f229b', endColorstr='#143fda',GradientType=1 );
+}
+
+    .login.loading button {
+        max-height: 100%;
+        padding-top: 50px;
+    }
+
+        .login.loading button .spinner {
+            opacity: 1;
+            top: 40%;
+        }
+
+    .login.ok button {
+        background-color: #05683A;
+    }
+
+        .login.ok button .spinner {
+            border-radius: 0;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            height: 20px;
+            animation: none;
+            transform: rotateZ(-45deg);
+        }
+
+    .login input {
+        display: block;
+        padding: 15px 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        border: 1px solid #ddd;
+        transition: border-width 0.2s ease;
+        border-radius: 2px;
+        color: #ccc;
+    }
+
+        .login input + i.fa {
+            color: #fff;
+            font-size: 1em;
+            position: absolute;
+            margin-top: -47px;
+            opacity: 0;
+            left: 0;
+            transition: all 0.1s ease-in;
+        }
+
+        .login input:focus {
+            outline: none;
+            color: #444;
+            border-color: #BF1E2D;
+            border-left-width: 35px;
+        }
+
+            .login input:focus + i.fa {
+                opacity: 1;
+                left: 30px;
+                transition: all 0.25s ease-out;
+            }
+
+    .login a {
+        font-size: 0.8em;
+        color: #BF1E2D;
+        text-decoration: none;
+    }
+
+    .login .title {
+        color: #444;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 10px 0 30px 0;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+    }
+
+    .login button {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background: #5cce31;
+        color: #fff;
+        margin-top: 25px;
+        border: 0px solid rgba(68, 234, 83, 0.31);
+        border-radius: 50px;
+        transform: rotateZ(0deg);
+        transition: all 0.1s ease-out;
+    }
+
+        .login button .spinner {
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            border: 4px solid #ffffff;
+            border-top-color: rgba(255, 255, 255, 0.3);
+            border-radius: 100%;
+            left: 50%;
+            top: 0;
+            opacity: 0;
+            margin-left: -20px;
+            margin-top: -20px;
+            animation: spinner 0.6s infinite linear;
+            transition: top 0.3s 0.3s ease, opacity 0.3s 0.3s ease, border-radius 0.3s ease;
+            box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+        }
+
+    .login:not(.loading) button:hover {
+        box-shadow: 0px 1px 3px #00A5B6;
+    }
+
+    .login:not(.loading) button:focus {
+        border-bottom-width: 4px;
+    }
+
+    .login img {       
+        width: 90%;
+    }
+
+    .login .divLogo {
+        display: inline-block;
+        border-radius: 50%;
+        height: 200px;
+        background: white;
+        width: 200px;
+        box-shadow: 0px 0px 57px #001748;
+    }
+
+footer {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+    color: #ddd;
+    font-weight: normal;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+    font-size: 0.8em;
+}
+
+    footer a, footer a:link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.text-center {
+    text-align: center;
+}
+
+.title-trade {
+    text-align: center;
+    color: white;
+}
+
+
+@media (max-width: 435px) {
+    .login {
+        width: 100% !important;
+    }
+}

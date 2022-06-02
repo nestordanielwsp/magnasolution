@@ -1,0 +1,36 @@
+﻿<div class="row" ng-if="!imageButton">
+    <div class="col-xs-8 col-sm-9 p-0" ng-if="!hideInput">
+        <span class="label-color" ng-if="label"><b>{{label}}</b> </span>
+        <input type="text" ng-model="fileName" class="form-control-input"
+               readonly="readonly" ng-if="!fileName || !openInInput" />
+        <input type="text" ng-model="fileName" class="form-control-input"
+               readonly="readonly" ng-if="fileName && openInInput"
+               ng-click="openFileFromInput()" style="cursor:pointer" />
+    </div>
+
+    <div class="p-0" ng-hide="options.disabled" ng-class="{'col-sm-3': !hideInput, 'col-sm-12': hideInput}">
+        <br ng-if="label" />
+        <span class="btn btn-link blue-button fileinput-button" ng-class="{'p-0': isInsideTable}">
+            <span>{{labelButton}} </span>
+            <input type="file" nv-file-select="" uploader="uploader">
+        </span>
+    </div>
+</div> 
+
+<div ng-if="imageButton" style="display: inline-block; vertical-align: middle">
+    <span class="fileinput-button" ng-hide="fileName && !isMultiple">
+        <button type="button" class="btn btn-link p-0 no-disabled">
+            <i class="fa" ng-class="imageButton"></i>
+        </button>
+        <input type="file" class="no-disabled" nv-file-select="" uploader="uploader" ng-hide="isMultiple">
+        <input type="file" class="no-disabled" nv-file-select="" uploader="uploader" multiple ng-show="isMultiple">
+    </span>
+
+    <div style="position:relative" ng-show="fileName && !isMultiple">
+        <button type="button" class="btn btn-link no-disabled" ng-click="openFileFromInput()">
+            <i class="fa fa-lg" ng-class="downloadButton"></i>
+        </button>
+        <i class="fa fa-times pointer btn-delete" ng-click="remove()" 
+           style="position: absolute; top:-5px" ng-show="options.puedeEliminar"></i>
+    </div>
+</div> 

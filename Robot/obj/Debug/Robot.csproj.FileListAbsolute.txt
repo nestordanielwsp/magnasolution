@@ -1,0 +1,14 @@
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\Robot\bin\Debug\Robot.exe.config
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\Robot\bin\Debug\Robot.exe
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\Robot\bin\Debug\Robot.pdb
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\Robot\obj\Debug\Robot.csprojAssemblyReference.cache
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\Robot\obj\Debug\Robot.csproj.CoreCompileInputs.cache
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\Robot\obj\Debug\Robot.exe
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\Robot\obj\Debug\Robot.pdb
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\magnasolution\Robot\bin\Debug\Robot.exe.config
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\magnasolution\Robot\bin\Debug\Robot.exe
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\magnasolution\Robot\bin\Debug\Robot.pdb
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\magnasolution\Robot\obj\Debug\Robot.csproj.AssemblyReference.cache
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\magnasolution\Robot\obj\Debug\Robot.csproj.CoreCompileInputs.cache
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\magnasolution\Robot\obj\Debug\Robot.exe
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\magnasolution\Robot\obj\Debug\Robot.pdb

@@ -1,0 +1,84 @@
+﻿Titulo=Indicadores de Cierre de Mes
+lblFiltrarPor=Filtrar por:
+lblEvolucionCartera=Evolución de Cartera
+lblEvolucionCalidadDias=Evolución de Calidad y Días Cartera
+lblCanal=Canal
+lblRegion=Región
+lblVendedor=Vendedor
+lblJefeVentas=Jefe Ventas
+lblAnalista=Analista
+lblJac=JAC
+lblTipoDescuento=Tipo de Descuento
+lblVentasPor=Ventas por:
+lblTotalVentas=Total Ventas
+lblCanalModerno=Canal Moderno
+lblCanalTradiciona=Canal Tradicional
+lblVentas=Ventas
+lblVentasRegion=Ventas por región
+lblTopClientes=Top 10 Clientes
+lblVentasMarca=Ventas por Marca
+lblVentasCanal=Ventas por Canal
+lblCorriente=Corriente
+lblVencida=Vencida
+lblDistribucionCanal=Distribución por Canal
+lblComportamientoAnual=Comportamiento Anual
+lblTotal=Total
+lblTotalCartera=Total Cartera(Millones)
+
+lblAnioActual=Año actual
+lblAnioAnterior=Año Anterior
+lblVariacion=Variación
+
+lblCobrarA=Cobrar A
+lblCliente=Cliente
+lblSubcuenta=Subcuenta
+lblMarca=Marca
+lblTodos=Todos
+
+gvReporte-CobrarA=Cobrar A
+gvReporte-Subcuenta=Subcuenta
+gvReporte-Marca=Marca
+gvReporte-AnioActual=Año Actual
+gvReporte-AnioAnterior=Año Anterior
+gvReporte-Variacion=Variación
+
+gvReporte-NombreCanal=Canal
+gvReporte-NombreCliente=Cliente
+gvReporte-NombreAnalista=Analista de cartera
+gvReporte-NombreVendedor=Vendedor
+gvReporte-NombreRegion=Región
+gvReporte-DocumentoId=Documento
+gvReporte-Monto=Monto
+gvReporte-Total=Total
+gvReporte-0Dias=A 0 Días
+gvReporte-30Dias=A 30 Días
+gvReporte-60Dias=A 60 Días
+gvReporte-90Dias=A 90 Días
+gvReporte-120Dias=A 120 Días o Más
+
+lblDiasCartera=Días de Cartera
+lblCalidadCartera=Calidad de Cartera
+lblPromedio=Promedio días
+lblPromedioCalidad=PromedioCalidad
+lblCobrabilidadAutoservicios=Cobrabilidad de Autoservicios
+lblDias=Días
+lblCalidad=Cal.(%)
+
+lblValor=VALOR
+lblPorcentaje=%
+lblFacturacion=Facturación
+lblDescuentos=Descuentos
+lblCobrabilidad=Cobrabilidad 
+
+btnAvanzado=Avanzado
+btnActualizar=Actualizar
+btnExcel=Excel
+btnAntiguedad=Antigüedad
+btnCalidadDias=Calidad y Días
+btnCobrabilidad=Cobrabilidad
+btnResumen=Resumen
+btnCanal=Canal
+btnCliente=Cliente
+btnAnalista=Analista
+btnVendedor=Vendedor
+btnRegion=Región

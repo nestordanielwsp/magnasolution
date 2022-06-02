@@ -1,0 +1,19 @@
+﻿Titulo=Catálogos – Proveedores
+
+lblNombreCodigo=Nombre/Código QAD
+lblNombre=Nombre
+lblCodigoQad=Código QAD
+lblDetalleProveedor=Detalle Proveedor
+lblCodRelacionComercial=Código Relación Comercial
+lblDireccion=Dirección
+lblCodigoPostal=Código Postal
+lblCiudad=Ciudad
+lblCondado=Condado
+lblEstado=Estado
+lblPais=País
+lblImpuestoFederal=Impuesto Federal
+lblImpuestoEstatal=Impuesto Estatal
+lblTipoProveedor=Tipo de Proveedor
+lblPagaCargosBancarios=Paga Cargos Bancarios
+
+efdb-Proveedor-01=El proveedor ya existe.

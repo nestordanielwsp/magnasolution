@@ -1,0 +1,48 @@
+﻿Titulo=Reporte Ventas
+lblFiltrarPor=Filtrar por:
+lblCanal=Canal
+lblRegion=Región
+lblVendedor=Vendedor
+lblJefeVentas=Jefe Ventas
+lblJac=JAC
+lblMarca=Marca
+lblProducto=Producto
+lblVentasPor=Ventas por:
+lblTotalVentas=Total Ventas
+lblCanalModerno=Canal Moderno
+lblCanalTradiciona=Canal Tradicional
+lblVentas=Ventas
+lblVentasRegion=Ventas por región
+lblTopClientes=Top 10 Clientes
+lblVentasMarca=Ventas por Marca
+lblVentasCanal=Ventas por Canal
+
+lblAnioActual=Año actual
+lblAnioAnterior=Año Anterior
+lblVariacion=Variación
+
+lblCobrarA=Cobrar A
+lblCliente=Cliente
+lblSubcuenta=Subcuenta
+lblTodos=Todos
+
+gvReporte-Canal=Canal
+gvReporte-CobrarA=Cobrar A
+gvReporte-Cliente=Cliente
+gvReporte-Subcuenta=Subcuenta
+gvReporte-Marca=Marca
+gvReporte-Vendedor=Vendedor
+gvReporte-Region=Región
+gvReporte-AnioActual=Año Actual
+gvReporte-AnioAnterior=Año Anterior
+gvReporte-Variacion=Variación
+
+btnAvanzado=Avanzado
+btnActualizar=Actualizar
+btnExcel=Excel
+btnResumen=Resumen
+btnCanal=Canal
+btnCliente=Cliente
+btnMarca=Marca
+btnVendedor=Vendedor
+btnRegion=Región

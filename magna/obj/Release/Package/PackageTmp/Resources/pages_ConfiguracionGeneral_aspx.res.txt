@@ -1,0 +1,55 @@
+﻿Titulo=Configuración General
+lblFiltrarPor=Filtrar por:
+LibroDiario=Libro Diario
+CuentasContablesFiscales=Cuentas Contables Fiscales
+CuentasContablesGastos=Cuentas Contables Gastos
+ObjetivosIndicadoresCartera=Objetivos Indicadores de Cartera
+CamposCargaCim=Campos Default Carga CIM
+ClaveNotasCreditoFiscal=Clave Notas Crédito (Fiscal)
+ClaveNotasCreditoNoFiscal=Clave Notas Crédito (No Fiscal)
+ClaveIvaFiscal=Iva (%)
+
+ClaveIvaRetencion=Retención de IVA (%)
+CuentaIvaRetencion=Cuenta de Retención de IVA
+ClaveIvaFrontera=IVA Frontera (%)
+ClaseImpuestoFrontera=Clase Impuesto Frontera
+TipoImpuestoFrontera=Tipo Impuesto Frontera
+
+CuentaActividades=Cuenta de actividades
+ObjetivoContabilidad=Objetivo contabilidad
+ObjetivoCartera=Objetivo cartera
+PorcentajeRecaudoCartera=Porcentaje Recaudo Cartera
+CuentaIvaFiscal=Cuenta de IVA (Fiscal)
+CuentaIvaNoFiscal=Cuenta de IVA (No Fiscal)
+TipoFactura=Tipo Factura
+ExcluirImpuesto=Excluir Impuesto
+ClaseImpuesto=Clase Impuesto
+TerminosCredito=Términos de Crédito
+SeparadorCarga=Separador Carga CIM
+TipoImpuesto=Tipo Impuesto
+
+lblCamposCargaCimRequisicion=Campos Default Carga CIM Requisión
+lblEntidad=Entidad
+lblSubcuenta=Subcuenta
+lblCentroCosto=Centro Costos
+lblParametros=Parametros del sistema
+lblTopeDiasProntoPago=Monto tope para días pronto pago
+lblAlmacen=Almacén
+lblDiasCierrePresupuesto=Días para cierre de presupuesto
+
+lblInformacionAdicionalPromocion=Información Adicional Promoción
+lblPrefijoPromocion=Prefijo Promoción
+lblGrupo=Grupo
+lblImpuesto=Impuesto
+lblTipo=Tipo
+lblEstatus=Estatus
+lblAlmacenPromocionArmada=Almacén Promoción Armada
+
+msgTopeDiasProntoPago= Se intenta sobre pasar el monto tope para los ajustes, monto tope:
+lblNuevo=Agregar
+btnVer=Ver
+msgAlertGuardar = La Configuración general ha sido guardado correctamente.
+lblSelect=Selecciona una opción
+msgGridSinInformacion=No se encontró información para mostrar.
+efdb-ConfiguracionGeneral-01|=La Configuración General Ya esta activa y no se puede agregar una adicional.
+TituloDetalle=Detalle

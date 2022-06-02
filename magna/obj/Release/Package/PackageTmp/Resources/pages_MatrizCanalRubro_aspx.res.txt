@@ -1,0 +1,26 @@
+﻿Titulo=Catálogos – Matriz Canal / Rubro
+
+lblDetallePerfil=Detalle Perfil
+lblFiltrarPor=Filtrar Por:
+lblNombre=Nombre
+lblTipo=Tipo
+lblVentas=Ventas
+lblCartera=Cartera
+lblEsVendedor=Es Vendedor
+lblOrden=Orden Aprobación
+lblActivo=Activo
+lblSi=Si
+lblNo=No
+lblAutorizaEn=Autoriza En:
+lblContractual=Contractual
+lblExtracontractual=Extracontractual
+lblApv=APV
+lblDevolucion=Devolución
+lblMontoAutorizacion=Monto para autorizar
+
+btnAvanzado=Avanzado
+btnBuscar=Buscar
+btnAgregar=Agregar
+btnVer=Ver
+
+efdb-PerfilFuncional-01=El perfil ya existe.

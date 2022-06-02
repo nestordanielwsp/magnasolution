@@ -1,0 +1,40 @@
+﻿<div class="dropdown searchable-multi-select" uib-dropdown on-toggle="toggled(open)">
+    <a class="dropdown-toggle btn btn-default limit-ellipsis" data-toggle="dropdown" uib-dropdown-toggle data-target="#"
+       tooltip="{{ commaDelimitedSelected() }}" ng-class="{'disabled': readOnly}">
+        <span class="" ng-style="{ 'width' : width }">
+            <small ng-class="{'text-muted': commaDelimitedSelected() === 'Sin elementos Seleccionados'}">
+                {{ commaDelimitedSelected() }}
+            </small>
+            <b class="caret" ng-if="!readOnly && allItems.length"></b>
+        </span>
+    </a>
+    <ul ng-if="!readOnly && allItems.length" class="dropdown-menu dropdown-menu-form form-control" role="menu">
+        <li><input type="text" class="form-control" ng-model="searchQuery" placeholder="Buscar"></li>
+        <li ng-repeat="item in ::allItems track by $index"
+            ng-hide="searchQuery.length && item[displayAttr].toLowerCase().indexOf(searchQuery.toLowerCase()) < 0">
+            <label class="checkbox clickable custom-list" ng-click="updateSelectedItems(item)"
+                   ng-class="{'text-success': isItemSelected(item) }">
+                {{ item[displayAttr] }}
+                <span class="glyphicon glyphicon-ok pull-right clickable" style="color: #0ba457;"
+                      ng-show="isItemSelected(item)"></span>
+            </label>
+        </li>
+    </ul>
+    <style>
+        .form-group label.custom-list {
+            padding: 7px;
+            color: #666;
+            font-weight: 400;
+            font-size: 13px;
+            margin: 0px;
+            border: 1px solid #a29b9b2b;
+        }
+        .limit-ellipsis {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: none;
+            border-bottom: 1px solid #003cae;
+        }
+    </style>
+</div>

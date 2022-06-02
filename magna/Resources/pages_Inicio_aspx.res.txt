@@ -1,0 +1,20 @@
+﻿Titulo=Dashboard
+
+lblFiltrarPor=Filtrar Por:
+lblVentas=Ventas
+lblTotalVentas=Total Ventas (Miles)
+lblRechazos=Rechazos (Miles)
+lblDescuentos=Descuentos (Miles)
+lblVentasNetas=Ventas Netas
+lblVentasMarca=Ventas por Marca
+lblVentasCanal=Ventas por Canal
+lblMillones=(Millones)
+lblCarteraAlDia=Cartera al Día
+lblCanalModerno=Canal Moderno
+lblCanalTradicional=Canal Tradicional
+lblSubCanal=Sub-canal
+lblTotal=Total
+lblCorriente=Corriente
+lblVencido=Vencido
+
+btnActualizar=Actualizar

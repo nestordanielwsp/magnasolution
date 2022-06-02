@@ -1,0 +1,23 @@
+﻿Titulo=Catálogos – Artículos
+
+lblNombreArticulo=Nombre Artículo
+lblArticulo=Artículo
+lblNumArticulo=Número artículo
+lblAlmacen=Almacén
+lblUnidadMedida=Unidad de medida
+lblLineaProductos=Línea de productos
+lblTipoArticulo=Tipo de artículo
+lblEstado=Estado
+lblComprador=Comprador/Planeador
+lblTiposATP=Tipos de ATP forzado
+lblRestricionADD=Restricción ADD-SO
+lblDetalleArticulo=Detalle Artículo
+lblProveedores=Proveedores
+lblBusqueda=Búsqueda rápida por
+lblConfiguracionLista=Configuración Lista Precios
+lblCantidades=Cantidades
+lblPrecio=Precio
+lblDiasProduccion=Días Prod
+lblCodigo=Código
+
+efdb-Articulo-01=El artículo ya existe.

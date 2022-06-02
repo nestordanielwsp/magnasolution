@@ -1,0 +1,7 @@
+﻿Titulo=Comprador
+lblFiltrarPor = Filtrar Por
+lblBusquedaComprador = Búsqueda Comprador
+lblUsuarioComprador = Usuario
+lblNombreComprador = Nombre
+lblActive = Activo
+lblDetalleComprador = Detalle Comprador

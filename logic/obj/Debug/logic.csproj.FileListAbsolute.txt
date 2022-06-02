@@ -1,0 +1,14 @@
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\bin\Debug\logic.dll.config
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\bin\Debug\logic.dll
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\bin\Debug\logic.pdb
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\bin\Debug\EPPlus.dll
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\bin\Debug\Newtonsoft.Json.dll
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\bin\Debug\NPOI.dll
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\bin\Debug\RestSharp.dll
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\bin\Debug\Newtonsoft.Json.xml
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\bin\Debug\RestSharp.xml
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\obj\Debug\logic.csproj.CoreCompileInputs.cache
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\obj\Debug\logic.csproj.CopyComplete
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\obj\Debug\logic.dll
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\obj\Debug\logic.pdb
+C:\Users\daniel.almaguer\Documents\GitHub\QualaTpm\logic\obj\Debug\logic.csproj.AssemblyReference.cache

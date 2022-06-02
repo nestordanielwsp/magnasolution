@@ -1,0 +1,28 @@
+﻿<script type="text/ng-template" id="check_box_tree_default.html">
+    <div data-role="wrapper">
+        <span data-role="spacer" ng-style="{'width': node.Level * 24 }" style="width: 0px;" />
+        <span data-role="expander" data-mode="close" class="gj-tree-material-icons-expander" data-nodrag ng-click="toggle(this)" ng-if="node.Children.length > 0">
+            <i class="gj-icon" ng-class="{'plus': collapsed,'minus': !collapsed}" />
+        </span>
+        <span data-role="expander" data-mode="close" class="gj-tree-material-icons-expander" ng-if="node.Children.length == 0">&nbsp;</span>
+        <span data-role="checkbox" >
+            <label class="gj-checkbox-bootstrap gj-checkbox-bootstrap-4 gj-checkbox-material-icons">
+                <input type="checkbox" data-type="checkbox" data-guid="816b9acf-25bf-1cef-1288-0af956417bac"  ng-class="{'indeterminate':node.indeterminate}"
+                       data-checkbox="true" ng-model="node.ticked" ng-click="toogleCheckBox(node)">
+                <span class="gj-icon" />
+            </label>
+        </span>
+        <span data-role="display">{{node.Item.Name}}</span>
+    </div>
+    <ul class="gj-list gj-list-bootstrap"  ng-class="{hidden: collapsed}" >
+        <li data-role="node" class="list-group-item" ng-repeat="node in node.Children | filter:active" ui-tree-node ng-include="'check_box_tree_default.html'" >
+        </li>
+    </ul>
+</script>
+
+<div data-type="tree" class="gj-unselectable gj-tree-bootstrap-4" ui-tree="treeOptions" id="tree-root" data-drag-enabled="false">
+    <ul class="gj-list gj-list-bootstrap" ui-tree-nodes ng-model="root.Children">
+        <li data-id="1" data-role="node" class="list-group-item" ng-repeat="node in root.Children| filter:active" ui-tree-node ng-include="'check_box_tree_default.html'" >
+        </li>
+    </ul>
+</div>
