@@ -2494,14 +2494,14 @@ var getObjectByValue = function (array, key, value) {
                 var parameters = $scope.parameters ? $scope.parameters : {};
                 item.parameters = _.defaults(item.parameters, parameters);
                 item.formData = [item.parameters];
-                $("#loading").addClass("quala-loader");
+                $("#loading").addClass("empresa-loader");
             };
 
             $scope.uploader.onCompleteAll = function () {
                 if ($scope.onCompleteAll) {
                     $scope.onCompleteAll();
                 }
-                $("#loading").removeClass("quala-loader");
+                $("#loading").removeClass("empresa-loader");
             };
 
             $scope.openFileFromInput = function () {
@@ -3375,7 +3375,7 @@ var getObjectByValue = function (array, key, value) {
             scope.lblNuevoObjetivo = Ex.GetResourceValue("lblNuevoObjetivo");
             scope.lblNumeroPromociones = Ex.GetResourceValue("lblNumeroPromociones");
             scope.lblHerramientaMedicion = Ex.GetResourceValue("lblHerramientaMedicion");
-            scope.lblFuerzaVentasQuala = Ex.GetResourceValue("lblFuerzaVentasQuala");
+            scope.lblFuerzaVentasMagna = Ex.GetResourceValue("lblFuerzaVentasMagna");
             scope.lblNotaObjetivoConcurso = Ex.GetResourceValue("lblNotaObjetivoConcurso");
             scope.lblFuerzaVentasExterna = Ex.GetResourceValue("lblFuerzaVentasExterna");
             scope.lblFolioNomina = Ex.GetResourceValue("lblFolioNomina");

@@ -1,8 +1,8 @@
 ﻿
-Exertus.BuildBinding = function () {
-    if (Exertus.Binding != null)
+Empresa.BuildBinding = function () {
+    if (Empresa.Binding != null)
         return;
-    Exertus.Binding = function (element) {
+    Empresa.Binding = function (element) {
         this.Root = typeof element === "string"
             ? document.getElementById(element)
             : element;
@@ -13,15 +13,15 @@ Exertus.BuildBinding = function () {
         this.Init();
     }
 
-    Exertus.Binding.Group = function () {
+    Empresa.Binding.Group = function () {
         this.Elements = [];
     }
 
-    Exertus.Binding.Grid = function () {
+    Empresa.Binding.Grid = function () {
         this.Elements = [];
     }
 
-    Exertus.Binding.Group.prototype.ClearConstraints = function () {
+    Empresa.Binding.Group.prototype.ClearConstraints = function () {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
             element.DataConstraint = null;
@@ -39,16 +39,16 @@ Exertus.BuildBinding = function () {
         }
     }
 
-    Exertus.Binding.Group.prototype.SetConstraints = function (constraintName) {
+    Empresa.Binding.Group.prototype.SetConstraints = function (constraintName) {
         this.ClearConstraints();
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
             element.setAttribute("data-constraint", constraintName);
-            Exertus.SetConstraint(element);
+            Empresa.SetConstraint(element);
         }
     }
 
-    Exertus.Binding.Group.prototype.AvoidCapture = function () {
+    Empresa.Binding.Group.prototype.AvoidCapture = function () {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
             element.AvoidCapture = true;
@@ -59,14 +59,14 @@ Exertus.BuildBinding = function () {
         }
     }
 
-    Exertus.Binding.Group.prototype.AddTitle = function (msgAyuda) {
+    Empresa.Binding.Group.prototype.AddTitle = function (msgAyuda) {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index]; 
             element.setAttribute("title", msgAyuda);
         }
     }
 
-    Exertus.Binding.Group.prototype.Display = function (clase) {
+    Empresa.Binding.Group.prototype.Display = function (clase) {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
             element.Display = true;
@@ -74,7 +74,7 @@ Exertus.BuildBinding = function () {
         }
     }
 
-    Exertus.Binding.Group.prototype.EnableCapture = function () {
+    Empresa.Binding.Group.prototype.EnableCapture = function () {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
 
@@ -84,7 +84,7 @@ Exertus.BuildBinding = function () {
         }
     }
 
-    Exertus.Binding.Group.prototype.Visible = function (esVisible) {
+    Empresa.Binding.Group.prototype.Visible = function (esVisible) {
         for (var index = 0; index < this.Elements.length; index++) {
             var element = this.Elements[index];
            
@@ -98,13 +98,13 @@ Exertus.BuildBinding = function () {
         }
     }
 
-    var type = Exertus.Binding;
+    var type = Empresa.Binding;
     type.ValidationStates = {
         VALID: "Valid",
         INVALID: "Invalid"
     };
 
-    var prototype = Exertus.Binding.prototype;
+    var prototype = Empresa.Binding.prototype;
     prototype.Type = type;
     prototype.Inputs = {};
     prototype.Validators = {};
@@ -137,8 +137,8 @@ Exertus.BuildBinding = function () {
 
             isGrouped = input.getAttribute("group-name");
             if (isGrouped != null) {
-                if (typeof (Exertus.Binding.Group) != 'undefined') {
-                    this.Groups[isGrouped] = this.Groups[isGrouped] || new Exertus.Binding.Group();
+                if (typeof (Empresa.Binding.Group) != 'undefined') {
+                    this.Groups[isGrouped] = this.Groups[isGrouped] || new Empresa.Binding.Group();
                 }
                 else {
                     this.Groups[isGrouped] = this.Groups[isGrouped] || new this.Group();
@@ -148,7 +148,7 @@ Exertus.BuildBinding = function () {
 
             isGrid = input.getAttribute("grid");
             if (isGrid != null) {
-                this.Grids[isGrid] = this.Grids[isGrid] || new Exertus.Binding.Grid();
+                this.Grids[isGrid] = this.Grids[isGrid] || new Empresa.Binding.Grid();
                 this.Grids[isGrid].Elements.push(input);
             }
 
@@ -160,7 +160,7 @@ Exertus.BuildBinding = function () {
 
                 var calendar = input.getAttribute("calendar");
                 if (calendar != null)
-                    new Exertus.DatePicker(input);
+                    new Empresa.DatePicker(input);
 
                 var format = input.getAttribute("Format");
 
@@ -176,7 +176,7 @@ Exertus.BuildBinding = function () {
 
                 this.Inputs[propertyName] = input;
                 input.Binding = this;
-                Exertus.SetConstraint(input);
+                Empresa.SetConstraint(input);
             }
 
 
@@ -213,7 +213,7 @@ Exertus.BuildBinding = function () {
             for (var index = 0; index < this.Elements.length; index++) {
                 var element = this.Elements[index];
                 element.setAttribute("data-constraint", constraintName);
-                Exertus.SetConstraint(element);
+                Empresa.SetConstraint(element);
             }
         }
 
@@ -405,7 +405,7 @@ Exertus.BuildBinding = function () {
                     var filter = this.Filters[filterName || "_"];
                     if (datasource != null) {
                         var elements = filter == null ? datasource : filter(entity, datasource);
-                        Exertus.FillCombo(input, elements, Orchestra.DefaultSelectOption, entity[propertyName]);
+                        Empresa.FillCombo(input, elements, Orchestra.DefaultSelectOption, entity[propertyName]);
                     }
                 }
 
@@ -466,7 +466,7 @@ Exertus.BuildBinding = function () {
 
         for (propertyName in this.Inputs) {
             var field = this.Inputs[propertyName];
-            Exertus.ClearConstraintStyle(field);
+            Empresa.ClearConstraintStyle(field);
         }
     }
 
@@ -477,7 +477,7 @@ Exertus.BuildBinding = function () {
 
         for (propertyName in this.Inputs) {
             var field = this.Inputs[propertyName];
-            Exertus.ClearConstraintStyle(field);
+            Empresa.ClearConstraintStyle(field);
         }
     }
 
@@ -513,7 +513,7 @@ Exertus.BuildBinding = function () {
 
 
             var input = this.Inputs[propertyName];
-            var validationInfo = Exertus.ValidateConstraint(input);
+            var validationInfo = Empresa.ValidateConstraint(input);
             summary.Valid = summary.Valid && validationInfo.Valid; 
             
             if (validationInfo.Valid !== true && validationInfo.Message != null)
@@ -535,7 +535,7 @@ Exertus.BuildBinding = function () {
         }
         for (propertyName in states) {
             var input = this.Inputs[propertyName];
-            var validationInfo = Exertus.ValidateConstraint(input);
+            var validationInfo = Empresa.ValidateConstraint(input);
             summary.Valid = summary.Valid && validationInfo.Valid;
 
             if (validationInfo.Valid !== true && validationInfo.Message != null)

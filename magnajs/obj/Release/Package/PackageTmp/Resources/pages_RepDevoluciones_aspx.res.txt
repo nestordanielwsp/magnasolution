@@ -1,0 +1,31 @@
+﻿Titulo=Reporte Devoluciones
+lblFiltrarPor=Filtrar por:
+lblCanal=Canal
+lblTodos=Todos
+lblMarca=Marca
+lblCliente=Cliente
+lblCausal=Causal
+lblEstatus=Estatus
+
+gvReporte-Folio=Folio
+gvReporte-Codigo=Código cobrar a
+gvReporte-CobrarA=Cobrar a
+gvReporte-Canal=Canal
+gvReporte-Marca=Marca
+gvReporte-CodigoProducto=Codigo del producto
+gvReporte-Producto=Producto
+gvReporte-CantidadSolicitada=Cantidad solicitada
+gvReporte-CausalDevolucion=Causal de devolucion
+gvReporte-Subtotal=Subtotal
+gvReporte-Total=Total
+gvReporte-SolicitadoPor=Solicitado por
+gvReporte-PendienteAutorizar=Pendiente de autorizar por
+gvReporte-UltimoAutorizador=Ultimo Autorizador
+gvReporte-FechaSolucitud=Fecha de solicitud
+gvReporte-FechaAprobacion=Fecha de aprobación
+gvReporte-QAD=QAD
+gvReporte-Estatus=Estatus
+
+btnAvanzado=Avanzado
+btnActualizar=Actualizar
+btnExcel=Excel

@@ -1,0 +1,407 @@
+﻿<div class="mail-box padding-form rubro">
+    <i class="fa pointer" ng-click="expandir()"
+       ng-class="{'fa-chevron-right': !rubroActivity.Expandido, 'fa-chevron-down': rubroActivity.Expandido}"></i>
+
+    <div class="row">
+        <div class="col-sm-8" ng-if="!esPop">
+            <div class="subtitulo-color">
+                {{titulo}}
+            </div>
+
+            <small>
+                {{nota}}
+            </small>
+        </div>
+
+        <div class="col-sm-8" ng-if="esPop">
+            <div class="subtitulo-color">
+                {{titulo}}
+                <div ng-show="(false)">
+                    <label class="radio-inline" ng-repeat="item in tiposPop">
+                        <input type="radio" ng-model="rubroActivity.TipoPopId" ng-value="item.TipoPopId" required>
+                        <span class="label-color" style="font-size: 12px">{{item.Nombre}}</span>
+                    </label>
+                </div>
+            </div>
+            <small class="ng-binding" ng-if="esPop">
+                Publicidad en el punto de venta
+            </small>
+        </div>
+
+        <div class="col-sm-3 text-right">
+            <h4 ng-if="!esOtros && !esSNP"><strong>{{rubroActivity.Importe | currency:$}}</strong></h4>
+            <h4 ng-if="esOtros && (rubroActivity.Importe == 0 && subrubroActivity.Importe == 0) || ((rubroActivity.Importe > 0 && subrubroActivity.Importe > 0) && (rubroActivity.Importe == subrubroActivity.Importe))"><strong>{{rubroActivity.Importe | currency:$}}</strong></h4>
+            <h4 ng-if="esOtros && rubroActivity.Objetivos.length > 0 && rubroActivity.Importe > 0  && (rubroActivity.Importe != subrubroActivity.Importe)"><strong>{{rubroActivity.Importe | currency:$}}</strong></h4>
+            <h4 ng-if="esOtros && subrubroActivity.Importe > 0 && rubroActivity.Importe == 0"><strong>{{subrubroActivity.Importe | currency:$}}</strong></h4>
+
+        </div>
+
+        <div class="col-sm-12">
+            <div class="divider"></div>
+        </div>
+    </div>
+
+    <div ng-show="rubroActivity.Expandido" style="margin-top: 15px">
+        <div class="row" style="margin-top: 15px" ng-if="tituloObjetivoVisible()">
+            <div class="col-lg-1 col-sm-2 col-xs-4 subtitle">
+                <h5>
+                    <strong>{{lblObjetivos}}</strong>
+                </h5>
+                <div></div>
+            </div>
+            <div class="col-lg-11 col-sm-10 col-xs-8" style="margin-top: 9px"
+                 ng-if="esConcurso && rubroActivity.TipoFuerzaId === 1 && rubroActivity.FolioNomina">
+                <strong>{{lblFolioNomina}}</strong>
+                <span style="padding-left: 10px">{{rubroActivity.FolioNomina}}</span>
+            </div>
+
+            <div class="col-lg-11 col-sm-10 col-xs-8" style="margin-top: 9px"
+                 ng-if="esOtros || esOs || rubroActivity.TipoFuerzaId === 2 || rubroActivity.TipoPopId > 1">
+                <label class="radio-inline">
+                    <input type="checkbox" ng-show="false" ng-model="rubroActivity.NoAplicaObjetivo">
+                    <span ng-show="false" class="label-color">{{lblNoAplica}}</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="table-responsive" ng-if="!rubroActivity.NoAplicaObjetivo && rubroActivity.TipoPopId !== 1">
+            <table class="activity-table" style="min-width: 1200px; margin-bottom: 40px"
+                   ng-if="(!esConcurso && activity.TipoActivityId !=4)">
+                <thead>
+                    <tr class="jsgrid-header-row text-center">
+                        <th style="width: 20px" ng-show="activity.PuedeModificar">
+                            <button type="button" class="btn btn-link" ng-click="agregarObjetivo()">
+                                <i class="glyphicon glyphicon-plus"></i>
+                            </button>
+                        </th>
+                        <th style="width: 20px" ng-if="esPromocion">
+                        </th>
+                        <th style="width: 250px">
+                            {{lblResultadosClaveFinales}}
+                        </th>
+                        <th style="width: 200px">
+                            {{lblIndicadorTotalCanal}}
+                        </th>
+                        <th style="width: 150px">
+                            {{lblUm}}
+                        </th>
+                        <th style="width: 100px">
+                            {{lblActual}}
+                        </th>
+                        <th style="width: 100px">
+                            {{lblObjetivo}}
+                        </th>
+                        <th style="width: 100px" ng-if="rubroActivity.editable || activity.tieneNuevoObjetivo">
+                            {{lblNuevoObjetivo}}
+                        </th>
+                        <th style="width: 140px" ng-if="esPromocion">
+                            {{lblNumeroPromociones}}
+                        </th>
+                        <th style="width: 200px">
+                            {{lblHerramientaMedicion}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody ng-if="rubroActivity.Objetivos.length > 0">
+                    <tr class="table-edit" ng-repeat="item in rubroActivity.Objetivos" ng-if="!item.Eliminar">
+                        <td class="text-center" ng-show="activity.PuedeModificar">
+                            <button type="button" class="btn btn-link btn-delete" ng-click="quitarObjetivo(item, $index)">
+                                <i class="fa fa-remove pointer"></i>
+                            </button>
+                        </td>
+                        <td ng-if="esPromocion">
+                            {{item.NumeroObjetivo}}
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.ResultadosClave" required />
+                        </td>
+                        <td>
+                            <select ng-model="item.TipoIndicadorId" class="form-control-select" required ng-show="activity.PuedeModificar"
+                                    ng-options="item.TipoIndicadorId as item.Nombre for item in tiposIndicador">
+                                <option value="">{{lblSeleccionar}}</option>
+                            </select>
+                            <input type="text" class="form-control-input" readonly ng-model="item.TipoIndicador"
+                                   ng-hide="activity.PuedeModificar" />
+                        </td>
+                        <td>
+                            <select ng-model="item.UnidadMedidaId" class="form-control-select" required
+                                    ng-options="item.UnidadMedidaId as item.Nombre for item in unidadesMedida">
+                                <option value="">{{lblSeleccionar}}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.Actual"
+                                   money required precision="0" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.Objetivo"
+                                   money required precision="0" />
+                        </td>
+                        <td ng-if="rubroActivity.editable || activity.tieneNuevoObjetivo">
+                            <input type="text" class="form-control-input" ng-model="item.NuevoObjetivo"
+                                   money required precision="0" ng-if="item.editable || item.NuevoObjetivo"
+                                   ng-disabled="!activity.PuedeReenviar" />
+                        </td>
+                        <td ng-if="esPromocion">
+                            <input type="text" class="form-control-input" ng-model="item.NumeroPromociones"
+                                   money required precision="0" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.HerramientaMedicion"
+                                   maxlength="100" required />
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody ng-if="subrubroActivity.Objetivos.length > 0">
+                    <tr class="table-edit" ng-repeat="item in subrubroActivity.Objetivos" ng-if="!item.Eliminar">
+                        <td class="text-center" ng-show="activity.PuedeModificar">
+                            <button type="button" class="btn btn-link btn-delete" ng-click="quitarObjetivo(item, $index)">
+                                <i class="fa fa-remove pointer"></i>
+                            </button>
+                        </td>
+                        <td ng-if="esPromocion">
+                            {{item.NumeroObjetivo}}
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.ResultadosClave" required />
+                        </td>
+                        <td>
+                            <select ng-model="item.TipoIndicadorId" class="form-control-select" required ng-show="activity.PuedeModificar"
+                                    ng-options="item.TipoIndicadorId as item.Nombre for item in tiposIndicador">
+                                <option value="">{{lblSeleccionar}}</option>
+                            </select>
+                            <input type="text" class="form-control-input" readonly ng-model="item.TipoIndicador"
+                                   ng-hide="activity.PuedeModificar" />
+                        </td>
+                        <td>
+                            <select ng-model="item.UnidadMedidaId" class="form-control-select" required
+                                    ng-options="item.UnidadMedidaId as item.Nombre for item in unidadesMedida">
+                                <option value="">{{lblSeleccionar}}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.Actual"
+                                   money required precision="0" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.Objetivo"
+                                   money required precision="0" />
+                        </td>
+                        <td ng-if="rubroActivity.editable || activity.tieneNuevoObjetivo">
+                            <input type="text" class="form-control-input" ng-model="item.NuevoObjetivo"
+                                   money required precision="0" ng-if="item.editable || item.NuevoObjetivo"
+                                   ng-disabled="!activity.PuedeReenviar" />
+                        </td>
+                        <td ng-if="esPromocion">
+                            <input type="text" class="form-control-input" ng-model="item.NumeroPromociones"
+                                   money required precision="0" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.HerramientaMedicion"
+                                   maxlength="100" required />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div ng-show="rubroActivity.Expandido" style="margin-top: 15px" ng-if="esConcurso">
+                <div class="row" style="margin-top: 15px">
+                    <div class="col-sm-8" style="margin-bottom: 10px; padding-top:7px">
+                        <label class="radio-inline">
+                            <span class="label-color">{{lblFuerzaVentasQuala}}</span>
+                        </label>
+                    </div>
+                    <div class="col-sm-3 text-right">
+                        <h4><strong>{{rubroActivity.ImporteFVQ | currency:$}}</strong></h4>
+                    </div>
+                </div>
+            </div>
+            <table class="activity-table" style="min-width: 1200px; margin-bottom: 40px" ng-if="esConcurso">
+                <thead>
+                    <tr class="jsgrid-header-row text-center">
+                        <th style="width: 20px" ng-show="activity.PuedeModificar">
+                            <button type="button" class="btn btn-link" ng-click="agregarObjetivo()">
+                                <i class="glyphicon glyphicon-plus"></i>
+                            </button>
+                        </th>
+                        <th style="width: 200px">
+                            {{lblCargoQueAplica}}
+                        </th>
+                        <th style="width: 150px">
+                            {{lblNumeroPersonas}}
+                        </th>
+                        <th style="width: 100px">
+                            {{lblNumeroPremios}}
+                        </th>
+                        <th style="width: 100px">
+                            {{lblIncentivo}}
+                        </th>
+                        <th style="width: 100px">
+                            {{lblCostoTotalLinea}}
+                        </th>
+                        <th style="width: 200px">
+                            {{lblFechaInicioFin}}
+                        </th>
+                        <th style="width: 150px">
+                            {{lblCuentaPuc}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-edit" ng-repeat="item in rubroActivity.Objetivos" ng-if="!item.Eliminar">
+                        <td class="text-center" ng-show="activity.PuedeModificar">
+                            <button type="button" class="btn btn-link btn-delete" ng-click="quitarObjetivo(item, $index)">
+                                <i class="fa fa-remove pointer"></i>
+                            </button>
+                            <input type="hidden" ng-model="item.TipoFuerzaId" value="1" />
+                        </td>
+                        <td>
+                            <select ng-model="item.PerfilFuncionalId" class="form-control-select" required
+                                    ng-options="item.PerfilId as item.Nombre for item in cargos">
+                                <option value="">{{lblSeleccionar}}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.NumeroPersonas"
+                                   money required precision="0" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.NumeroPremios"
+                                   money required precision="0" ng-change="calcularImporte()" ng-disabled="!premiosModificable()" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.Incentivo"
+                                   money required ng-change="calcularImporte()" ng-disabled="!concursoModificable()" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.CostoTotal"
+                                   money required readonly precision="2" />
+                        </td>
+                        <td>
+                            <datepicker-range ng-model="item.Fecha" required="required" input-class="form-control-input"
+                                              ng-disabled="!activity.PuedeModificar" />
+                        </td>
+                        <td>
+                            <select ng-model="item.CuentaContableId" class="form-control-select" required
+                                    ng-options="item.CuentaContableId as item.NombreCuentaContable for item in cuentas">
+                                <option value="">{{lblSeleccionar}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row mb" style="margin-top: 30px" ng-if="esConcurso">
+                <div class="col-sm-12">
+                    <small class="label-color">
+                        <strong class="label-color">
+                            {{lblNotaObjetivoConcurso}}
+                        </strong>
+                    </small>
+                    <textarea ng-model="rubroActivity.Bases" class="form-control" rows="4"
+                              ng-required="rubroActivity.Objetivos.length > 0"></textarea>
+                </div>
+            </div>
+            <div ng-show="rubroActivity.Expandido" style="margin-top: 15px" ng-if="esConcurso">
+                <div class="row" style="margin-top: 15px">
+                    <div class="col-sm-8" style="margin-bottom: 10px; padding-top:7px">
+                        <label class="radio-inline">
+                            <span class="label-color">{{lblFuerzaVentasExterna}}</span>
+                        </label>
+                    </div>
+                    <div class="col-sm-3 text-right">
+                        <h4><strong>{{rubroActivity.ImporteFVE | currency:$}}</strong></h4>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+                        <select ng-model="rubroActivity.TipoVentaExternaId" class="form-control-select" ng-change="limpiarDetalleConcurso()"
+                                ng-options="item.TipoVentaExternaId as item.Nombre for item in fuerzasVentaExterna">
+                            <option value="">{{lblSeleccionar}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <table class="activity-table" style="min-width: 1200px; margin-bottom: 40px" ng-if="esConcurso">
+                <thead>
+
+                    <tr class="jsgrid-header-row text-center">
+                        <th style="width: 20px" ng-show="activity.PuedeModificar">
+                            <button type="button" class="btn btn-link" ng-click="agregarObjetivoFVE()">
+                                <i class="glyphicon glyphicon-plus"></i>
+                            </button>
+                        </th>
+                        <th style="width: 250px">
+                            {{lblObjetivo}}
+                        </th>
+                        <th style="width: 200px">
+                            {{lblCargoQueAplica}}
+                        </th>
+                        <th style="width: 150px">
+                            {{lblNumeroPersonas}}
+                        </th>
+                        <th style="width: 100px">
+                            {{lblNumeroPremios}}
+                        </th>
+                        <th style="width: 100px">
+                            {{lblIncentivo}}
+                        </th>
+                        <th style="width: 100px">
+                            {{lblCostoTotalLinea}}
+                        </th>
+                        <th style="width: 200px">
+                            {{lblFechaInicioFin}}
+                        </th>
+                        <th style="width: 150px" ng-if="rubroActivity.TipoVentaExternaId == 2">
+                            {{lblCuentaPuc}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-edit" ng-repeat="item in rubroActivity.ObjetivosFVE" ng-if="!item.Eliminar">
+                        <td class="text-center" ng-show="activity.PuedeModificar">
+                            <button type="button" class="btn btn-link btn-delete" ng-click="quitarObjetivoFVE(item, $index)">
+                                <i class="fa fa-remove pointer"></i>
+                            </button>
+                            <input type="hidden" ng-model="item.TipoFuerzaId" value="2" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.Descripcion" required />
+                        </td>
+                        <td>
+                            <select ng-model="item.PerfilFuncionalId" class="form-control-select" required
+                                    ng-options="item.PerfilId as item.Nombre for item in cargos">
+                                <option value="">{{lblSeleccionar}}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.NumeroPersonas"
+                                   money required precision="0" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.NumeroPremios"
+                                   money required precision="0" ng-change="calcularImporte()" ng-disabled="!premiosModificable()" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.Incentivo"
+                                   money required ng-change="calcularImporte()" ng-disabled="!concursoModificable()" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control-input" ng-model="item.CostoTotal"
+                                   money required readonly precision="2" />
+                        </td>
+                        <td>
+                            <datepicker-range ng-model="item.Fecha" required="required" input-class="form-control-input"
+                                              ng-disabled="!activity.PuedeModificar" />
+                        </td>
+                        <td ng-if="rubroActivity.TipoVentaExternaId == 2">
+                            <select ng-model="item.CuentaContableId" class="form-control-select" required
+                                    ng-options="item.CuentaContableId as item.NombreCuentaContable for item in cuentas">
+                                <option value="">{{lblSeleccionar}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div ng-transclude>
+        </div>
+    </div>
+</div>

@@ -262,7 +262,7 @@ namespace logic
 
             if (!this.Page.IsPostBack)
             {
-                if (HttpContext.Current.Session["UsuarioID"] == null)
+                if (HttpContext.Current.Session["UsuarioID"] == null && HttpContext.Current.User.Identity.Name != "")
                 {
                     DataTable dt;
                     var a = new logic_acces(ConexionDB);
@@ -856,22 +856,22 @@ namespace logic
 
         public void ValidaSeguridad()
         {
-            var a = new logic_acces(ConexionDB);
-            var data = new Dictionary<string, object>();
-            data["UrlPagina"] = Page.Request.AppRelativeCurrentExecutionFilePath.Replace("~", "..");
-            data["PerfilId"] = Session["PerfilId"];
+            //var a = new logic_acces(ConexionDB);
+            //var data = new Dictionary<string, object>();
+            //data["UrlPagina"] = Page.Request.AppRelativeCurrentExecutionFilePath.Replace("~", "..");
+            //data["PerfilId"] = Session["PerfilId"];
 
-            var dt = a.ExecuteQuery("PerfilMenu_Validar", data).Tables[0];
+            //var dt = a.ExecuteQuery("PerfilMenu_Validar", data).Tables[0];
 
-            if (dt.Rows.Count == 0)
-            {
-                data["UrlPagina"] = "../Pages/Solicitudes.aspx";
-                dt = a.ExecuteQuery("PerfilMenu_Validar", data).Tables[0];
+            //if (dt.Rows.Count == 0)
+            //{
+            //    data["UrlPagina"] = "../Pages/Solicitudes.aspx";
+            //    dt = a.ExecuteQuery("PerfilMenu_Validar", data).Tables[0];
 
-                var pageRedirected = dt.Rows.Count == 0 ? "~/Pages/Login.aspx" : "~/Pages/Solicitudes.aspx";
+            //    var pageRedirected = dt.Rows.Count == 0 ? "~/Pages/Login.aspx" : "~/Pages/Solicitudes.aspx";
 
-                Response.Redirect(pageRedirected);
-            }
+            //    Response.Redirect(pageRedirected);
+            //}
         }
 
         public bool EsTienePermisoEspecial(int PermisoEspecialID)

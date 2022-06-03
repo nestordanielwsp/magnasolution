@@ -7,16 +7,10 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div style="width: 90%; margin:20px; font-size: 18px; color: #04a">
-            El sitio <b>TPM</b> ha cambiado de lugar, puede dar click en el siguiente enlace:
-            <a href="https://quala-tpm.azurewebsites.net">https://quala-tpm.azurewebsites.net</a>, 
-            o en unos momentos sera redirigido.
-        </div>
-    </form>
+   
 </body>
 
 <script type="text/javascript">    
-    location.href = 'https://quala-tpm.azurewebsites.net';
+    location.href = '';
 </script>
 </html>

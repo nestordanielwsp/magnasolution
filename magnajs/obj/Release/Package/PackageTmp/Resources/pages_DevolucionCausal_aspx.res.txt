@@ -1,0 +1,15 @@
+﻿Titulo=Catalogo - Devolución de Producto Terminado de Clientes
+lblFiltrarPor=Filtrar por:
+TipoCausal=Tipo
+NombreCausal=Causales
+Detalle=Detalle
+msgGridSinInformacion=No se encontró información para mostrar.
+lblSelect=Seleccione
+btnVer=Ver
+lblCerrar=Cerrar
+Causal=Causal
+Evidencias=Evidencias
+maxFileSize=20
+validExtensions=xlx,xlsx,pdf,doc,docx,png,jpg,jpeg
+folderArchivos=DevolucionCausal
+msgArchivoNoEncontrado=No se encontró el archivo.

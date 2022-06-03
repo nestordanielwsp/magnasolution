@@ -586,25 +586,25 @@ form .subtitulo-color {
     margin: 2px;
 }
 
-    .btn.btn-top:hover {
-        background: #2a6ead;
-    }
+.btn.btn-top:hover {
+    background: #2a6ead;
+}
 
-    .btn.btn-Approve:hover {
-        background: #5cce31;
-    }
+.btn.btn-Approve:hover {
+    background: #5cce31;
+}
 
-    .btn.btn-Reject:hover {
-        background: #FF0000;
-    }
+.btn.btn-Reject:hover {
+    background: #FF0000;
+}
 
 
-    .btn.btn-top i {
-        color: white;
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 17px;
-    }
+.btn.btn-top i {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 17px;
+}
 
 .btn.btn-Approve i {
     color: white;
@@ -625,16 +625,18 @@ form .subtitulo-color {
     display: inline-flex;
     float: right;
 }
+
 .btn-tpm > div {
     float: right;
 }
+
 .padding-7 {
     padding: 2px;
 }
 
 .ionic .checkbox input:checked:before, .ionic .checkbox input:checked + .checkbox-icon:before {
     background: #2512b2;
-    border-color: #3F51B5;
+    border-color: #FF0000;
 }
 
 select option:disabled {
@@ -691,10 +693,11 @@ select option:disabled {
     border: 1px solid #f2f2f2;
 }
 
-.btn.button-search-custom i {
-    color: #0069af;
-    font-size: 50px;
-}
+    .btn.button-search-custom i {
+        color: #0069af;
+        font-size: 50px;
+    }
+
     .btn.button-search-custom:hover {
         background: #f5f5f5;
     }

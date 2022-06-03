@@ -1,0 +1,75 @@
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\CYP.dll.config
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\CYP.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\CYP.pdb
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\EPPlus.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\logic.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\Microsoft.Azure.Storage.Blob.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\Microsoft.Azure.Storage.Common.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\Newtonsoft.Json.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\Renci.SshNet.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\RestSharp.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\System.Web.Providers.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\logic.pdb
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\logic.dll.config
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\Microsoft.Azure.KeyVault.Core.xml
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\Microsoft.Azure.Storage.Blob.xml
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\Microsoft.Azure.Storage.Common.xml
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\Newtonsoft.Json.xml
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\Renci.SshNet.xml
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\bin\RestSharp.xml
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\obj\Debug\CYP.csprojAssemblyReference.cache
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\obj\Debug\CYP.csproj.CoreCompileInputs.cache
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\obj\Debug\CYP.csproj.CopyComplete
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\obj\Debug\CYP.dll
+C:\Julio Espinosa\Quala_Github\QualaTpm\CYP\obj\Debug\CYP.pdb
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\CYP.dll.config
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\CYP.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\CYP.pdb
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\EPPlus.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\logic.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\Microsoft.Azure.Storage.Blob.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\Microsoft.Azure.Storage.Common.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\Newtonsoft.Json.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\Renci.SshNet.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\RestSharp.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\System.Web.Providers.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\logic.pdb
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\logic.dll.config
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\Microsoft.Azure.Storage.Blob.xml
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\Microsoft.Azure.Storage.Common.xml
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\Newtonsoft.Json.xml
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\Renci.SshNet.xml
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\bin\RestSharp.xml
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\obj\Debug\CYP.csproj.AssemblyReference.cache
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\obj\Debug\CYP.csproj.CoreCompileInputs.cache
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\obj\Debug\CYP.csproj.CopyComplete
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\obj\Debug\CYP.dll
+D:\Sistemas\NiajuSistemas\Repositorio\QualaTpm\CYP\obj\Debug\CYP.pdb
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\CYP.dll.config
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\CYP.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\CYP.pdb
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\EPPlus.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\logic.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\Microsoft.Azure.Storage.Blob.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\Microsoft.Azure.Storage.Common.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\Newtonsoft.Json.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\Renci.SshNet.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\RestSharp.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\System.Web.Providers.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\logic.pdb
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\logic.dll.config
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\Microsoft.Azure.Storage.Blob.xml
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\Microsoft.Azure.Storage.Common.xml
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\Newtonsoft.Json.xml
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\Renci.SshNet.xml
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\bin\RestSharp.xml
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\obj\Debug\CYP.csproj.AssemblyReference.cache
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\obj\Debug\CYP.csproj.CoreCompileInputs.cache
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\obj\Debug\CYP.csproj.CopyComplete
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\obj\Debug\CYP.dll
+C:\Users\daniel.almaguer\Documents\Revolution\GitHub\Source\EsquemaNuevo\CYP\obj\Debug\CYP.pdb

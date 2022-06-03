@@ -1,0 +1,16 @@
+﻿Titulo=Catalogo - Productos
+lblFiltrarPor=Filtrar por:
+Nombre=Producto
+Producto=Producto
+Codigo=Codigo
+NombreProducto=Producto
+NombreMarca=Marca
+Marca=Marca
+Activo=Activo
+lblNuevo=Agregar
+btnVer=Ver
+msgAlertGuardar = El producto ha sido guardado correctamente.
+lblSelect=Selecciona una opción
+msgGridSinInformacion=No se encontró información para mostrar.
+TituloDetalle=Detalle
+efdb-Producto-01=El producto ya existe.

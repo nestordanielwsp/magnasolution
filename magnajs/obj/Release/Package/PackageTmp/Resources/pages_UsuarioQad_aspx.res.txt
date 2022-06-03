@@ -1,0 +1,6 @@
+﻿Titulo = Usuario Qad
+lblBusquedaUsuariosQad = Búsqueda UsuarioQad
+lblDetalleUsuarioQad = Detalle UsuariosQad
+lblNombre = Nombre
+lblUsuario = Usuario
+lblActive = Activo

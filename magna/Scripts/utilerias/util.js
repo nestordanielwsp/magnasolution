@@ -1,4 +1,4 @@
-﻿window["Exertus"] = {};
+﻿window["Empresa"] = {};
 
 var _rfc_pattern_pm = "^(([A-Z&]{3})([0-9]{2})([0][13578]|[1][02])(([0][1-9]|[12][\\d])|[3][01])([A-Z0-9]{3}))|" +
     "(([A-Z&]{3})([0-9]{2})([0][13456789]|[1][012])(([0][1-9]|[12][\\d])|[3][0])([A-Z0-9]{3}))|" +
@@ -56,7 +56,7 @@ var Ex = {
     requeridos: function (id) {
         var valuebol = false;
         $(id + ' .requiredField').each(function () {
-            Exertus.ValidateConstraint(this);
+            Empresa.ValidateConstraint(this);
             if (jQuery.trim($(this).val()) == '') {
                 $(this).addClass('RequiredField');
                 valuebol = true;
@@ -142,9 +142,9 @@ var Ex = {
         catch (e) { alert(e.message + ' \n[tooltip()]') }
     },
     clear: function (id) {
-        if (Exertus.Binding) {
-            if (Exertus.Binding.Clear) {
-                Exertus.Binding.Clear();
+        if (Empresa.Binding) {
+            if (Empresa.Binding.Clear) {
+                Empresa.Binding.Clear();
             }
         }
     },
@@ -552,17 +552,17 @@ function OnEndRequest(sender, args) {
     }
 }
 
-Exertus.BuildServer = function () {
-    if (Exertus.Server != null)
+Empresa.BuildServer = function () {
+    if (Empresa.Server != null)
         return;
-    Exertus.Server = {};
-    var type = Exertus.Server;
+    Empresa.Server = {};
+    var type = Empresa.Server;
 
     type.data = {}
 
     type.Error = function (detail, adetail, bdetail) {
         Ex.load(false);
-        Exertus.Server.HandlerError(detail);
+        Empresa.Server.HandlerError(detail);
     }
 
     type.HandlerError = function (detail) {
@@ -656,11 +656,11 @@ Exertus.BuildServer = function () {
     }
 }
 
-Exertus.BuildModal = function () {
-    if (Exertus.Modal != null)
+Empresa.BuildModal = function () {
+    if (Empresa.Modal != null)
         return;
-    Exertus.Modal = {};
-    var type = Exertus.Modal;
+    Empresa.Modal = {};
+    var type = Empresa.Modal;
     type.Show = function (id, t, b, w, h, m) {
         w = (w == null ? 400 : w);
         h = (h == null ? 300 : h);
@@ -694,11 +694,11 @@ Exertus.BuildModal = function () {
 
 }
 
-Exertus.BuildGridView = function () {
-    if (Exertus.GridView != null)
+Empresa.BuildGridView = function () {
+    if (Empresa.GridView != null)
         return;
-    Exertus.GridView = {};
-    var type = Exertus.GridView;
+    Empresa.GridView = {};
+    var type = Empresa.GridView;
 
     type.GetValueCell = function (rowIndex, colId, gridId) {
         var gridView = document.getElementById(gridId);
@@ -869,11 +869,11 @@ Exertus.BuildGridView = function () {
 }
 
 
-Exertus.CreateDiv = function () {
+Empresa.CreateDiv = function () {
     return document.createElement('Div');
 }
 
-Exertus.GetBounds = function (el) {
+Empresa.GetBounds = function (el) {
     var rect = el.getBoundingClientRect();
     // Patch the result in IE only, so that this function can be inlined if
     // compiled for non-IE.
@@ -899,13 +899,13 @@ Exertus.GetBounds = function (el) {
     return /** @type {Object} */(rect);
 };
 
-Exertus.BuildAnchoredTooltip = function () {
+Empresa.BuildAnchoredTooltip = function () {
 
-    if (Exertus.AnchoredTooltip != null)
+    if (Empresa.AnchoredTooltip != null)
         return;
 
-    Exertus.AnchoredTooltip = function (anchor, content, config) {
-        this.Config = jQuery.extend({}, Exertus.AnchoredTooltip.DefaultConfig, config);
+    Empresa.AnchoredTooltip = function (anchor, content, config) {
+        this.Config = jQuery.extend({}, Empresa.AnchoredTooltip.DefaultConfig, config);
         this.Anchor = typeof anchor === "string"
             ? document.getElementById(anchor)
             : anchor;
@@ -915,7 +915,7 @@ Exertus.BuildAnchoredTooltip = function () {
             : content;
 
         this.Anchor.TooltipController = this;
-        this.Root = Exertus.CreateDiv();
+        this.Root = Empresa.CreateDiv();
         this.Root.appendChild(content);
         this.Content = content;
 
@@ -924,7 +924,7 @@ Exertus.BuildAnchoredTooltip = function () {
         var div;
 
         if (this.Config.TitleBehavior !== true) {
-            div = Exertus.CreateDiv();
+            div = Empresa.CreateDiv();
             jQuery(div).addClass("tooltipm-closebtn");
             div.Controller = this;
             div.setAttribute("onclick", "this.Controller.Close();");
@@ -933,14 +933,14 @@ Exertus.BuildAnchoredTooltip = function () {
         }
 
 
-        var arrowDiv = Exertus.CreateDiv();
+        var arrowDiv = Empresa.CreateDiv();
         jQuery(arrowDiv).addClass("tooltipm-leftarrow");
 
-        div = Exertus.CreateDiv();
+        div = Empresa.CreateDiv();
         jQuery(div).addClass("tooltipm-leftarrow-before");
         arrowDiv.appendChild(div);
 
-        div = Exertus.CreateDiv();
+        div = Empresa.CreateDiv();
         jQuery(div).addClass("tooltipm-leftarrow-after");
         arrowDiv.appendChild(div);
 
@@ -952,7 +952,7 @@ Exertus.BuildAnchoredTooltip = function () {
         }
     }
 
-    Exertus.AnchoredTooltip.DefaultConfig = {
+    Empresa.AnchoredTooltip.DefaultConfig = {
         TopMargin: null,
         LeftMargin: 5,
         TitleBehavior: false,
@@ -961,7 +961,7 @@ Exertus.BuildAnchoredTooltip = function () {
 
 
 
-    var prototype = Exertus.AnchoredTooltip.prototype;
+    var prototype = Empresa.AnchoredTooltip.prototype;
 
     prototype.Dispose = function () {
         this.Anchor.TooltipController = null;
@@ -1000,7 +1000,7 @@ Exertus.BuildAnchoredTooltip = function () {
 
     }
     prototype.Show = function () {
-        var bounds = Exertus.GetBounds(this.Anchor);
+        var bounds = Empresa.GetBounds(this.Anchor);
         this.Root.style.left = (bounds.right + this.Config.LeftMargin) + "px";
 
         if (this.Config.TopMargin == null)
@@ -1026,14 +1026,14 @@ Exertus.BuildAnchoredTooltip = function () {
 
 }
 
-Exertus.Date = function (input) {
+Empresa.Date = function (input) {
     this.Root = document.createElement("DIV");
     this.OriginalInput = input;
     this.Init();
 }
 
-Exertus.Date.BuildType = function () {
-    var type = Exertus.Date;
+Empresa.Date.BuildType = function () {
+    var type = Empresa.Date;
     type.prototype.Type = type;
     type.prototype.Root = document.createElement("DIV");
 
@@ -1083,8 +1083,8 @@ Exertus.Date.BuildType = function () {
         var yearRangeAttribute = this.Input.getAttribute("year-range");
         if (yearRangeAttribute != null)
             config.yearRange = yearRangeAttribute;
-        else if (Exertus.Date.YearRange != null)
-            config.yearRange = Exertus.Date.YearRange;
+        else if (Empresa.Date.YearRange != null)
+            config.yearRange = Empresa.Date.YearRange;
 
 
         jQuery(this.Input).datepicker(config);
@@ -1105,7 +1105,7 @@ Exertus.Date.BuildType = function () {
 
 }
 
-Exertus.DatePicker = function (input) {
+Empresa.DatePicker = function (input) {
     $('#' + input.id).datepicker({ dateFormat: 'dd/mm/yy' }).val();
 
     $('#' + input.id).blur(function () {
@@ -1127,18 +1127,18 @@ Exertus.DatePicker = function (input) {
     });
 }
 
-Exertus.DefaultSelectOption = {
+Empresa.DefaultSelectOption = {
     Text: "--- Seleccione ---",
     Value: "0"
 }
 
 $(function () {
     if (Ex.GetGlobalResourceValue("seleccioneOption").length > 0) {
-        Exertus.DefaultSelectOption.Text = Ex.GetGlobalResourceValue("seleccioneOption");
+        Empresa.DefaultSelectOption.Text = Ex.GetGlobalResourceValue("seleccioneOption");
     }
 });
 
-Exertus.AddOption = function (combo, option) {
+Empresa.AddOption = function (combo, option) {
     try {
         combo.options.add(option);
     }
@@ -1155,7 +1155,7 @@ Exertus.AddOption = function (combo, option) {
     }
 }
 
-Exertus.ClearCombo = function (comboID, defaultOptionInfo) {
+Empresa.ClearCombo = function (comboID, defaultOptionInfo) {
     var combo = (typeof comboID == "string") ? document.getElementById(comboID) : comboID;
     combo.innerHTML = "";
 
@@ -1163,11 +1163,11 @@ Exertus.ClearCombo = function (comboID, defaultOptionInfo) {
         var option = document.createElement("option");
         option.innerHTML = defaultOptionInfo.Text;
         option.value = defaultOptionInfo.Value;
-        Exertus.AddOption(combo, option);
+        Empresa.AddOption(combo, option);
     }
 }
 
-Exertus.DropDownFill = function (comboObject, entities, defaultOptionInfo, value, initialIndex) {
+Empresa.DropDownFill = function (comboObject, entities, defaultOptionInfo, value, initialIndex) {
 
     var combo = (typeof comboObject == "string") ? document.getElementById(comboObject) : comboObject;
 
@@ -1175,7 +1175,7 @@ Exertus.DropDownFill = function (comboObject, entities, defaultOptionInfo, value
         return;
     var currentValue = value || combo.value || "";
     combo.Entities = entities;
-    Exertus.ClearCombo(combo, defaultOptionInfo);
+    Empresa.ClearCombo(combo, defaultOptionInfo);
 
     if (entities == null)
         return;
@@ -1214,7 +1214,7 @@ Exertus.DropDownFill = function (comboObject, entities, defaultOptionInfo, value
 
 
         map[value] = true;
-        Exertus.AddOption(combo, option);
+        Empresa.AddOption(combo, option);
     }
 
     combo.GetSelectedEntity = function () {
@@ -1231,7 +1231,7 @@ Exertus.DropDownFill = function (comboObject, entities, defaultOptionInfo, value
         combo.selectedIndex = 0;
 }
 
-window.Exertus.ParseFloat = function (strValue) {
+window.Empresa.ParseFloat = function (strValue) {
     if (strValue == null)
         return 0.00;
     strValue = strValue.toString();

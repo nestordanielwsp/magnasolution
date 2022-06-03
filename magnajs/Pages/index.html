@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head id="Head1" runat="server">
+    <link href="../css/PanelCustom.css?v=1.1" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Empresa</title>
+
+   
+    <link rel="stylesheet" href="../scripts/librerias/admin/Ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="../scripts/librerias/admin/animate.css/animate.min.css" />
+   
+    <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/angular_material/0.11.0/angular-material.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="../css/main.css">
+   
+    <script type="text/javascript" src="../scripts/librerias/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../scripts/librerias/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/librerias/jquery/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="../scripts/librerias/admin/jquery/dist/jquery.min.js"></script>
+    <script src="../scripts/librerias/admin/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../scripts/librerias/admin/jquery.easing/js/jquery.easing.min.js"></script>
+    <script src="../scripts/librerias/admin/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="../scripts/librerias/jquery/jquery.widgets.js" type="text/javascript"></script>
+    <script src="../scripts/librerias/jquery/jquery.alerts.js" type="text/javascript"></script>
+    <script src="../scripts/utilerias/jBox.js" type="text/javascript"></script>
+    <script src="../scripts/librerias/jqte/jquery-te-1.4.0.js" type="text/javascript"></script>
+    <script src="../Scripts/librerias/jquery/jquery.fileupload.js"></script>
+    <script src="../Scripts/librerias/jquery/jquery.iframe-transport.js"></script>
+    <script src="../scripts/librerias/admin/moment/moment.min.js"></script>
+
+    <script src="../Scripts/librerias/jquery/bootstrap.min.js"></script>
+    <script src="../Scripts/librerias/jquery/bootstrap-datetimepicker.js"></script>
+    <script src="../Scripts/librerias/jquery/bootstrap-datepicker.min.js"></script>
+    <script src="../Scripts/librerias/jquery/bootstrap-select.min.js"></script>
+    <script src="../Scripts/librerias/jquery/highcharts.js"></script>
+    <script src="../Scripts/librerias/jquery/highcharts-3d.js"></script>
+   
+    <script src="../Scripts/librerias/jquery/locales.js"></script>
+
+    <script src="../scripts/librerias/admin/chart.js/dist/Chart.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angular_material/0.11.0/angular-material.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js'></script>
+    <script src="../Scripts/pages/appController.js"></script>
+    <script src="../scripts/librerias/admin/angular-route/angular-route.min.js"></script>
+    <script src="../scripts/librerias/admin/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="../scripts/librerias/admin/angular-slimscroll/angular-slimscroll.js"></script>
+    <script src="../scripts/librerias/admin/angular-smart-table/dist/smart-table.min.js"></script>
+    <script src="../scripts/librerias/admin/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+    <script src="../scripts/librerias/admin/angular-touch/angular-touch.min.js"></script>
+    <script src="../scripts/librerias/admin/angular-ui-sortable/sortable.min.js"></script>
+    <script src="../scripts/librerias/angular/angular-ui-tree.js"></script>
+    <script src="../scripts/librerias/admin/leaflet/dist/leaflet-src.js"></script>
+    <script src="../scripts/librerias/admin/angular-progress-button-styles/dist/angular-progress-button-styles.min.js"></script>
+    <script src="../scripts/librerias/admin/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="../scripts/librerias/admin/angular-chart.js/dist/angular-chart.min.js"></script>
+    <script src="../scripts/librerias/admin/chartist/dist/chartist.min.js"></script>
+    <script data-require="ui-bootstrap" src="../scripts/librerias/admin/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="../scripts/librerias/admin/angular-animate/angular-animate.min.js"></script>
+    <script src="../scripts/librerias/admin/angular-ui-select/dist/select.min.js"></script>
+
+    <script src="../Scripts/configuracion/theme/theme.module.js"></script>
+    <script src="../Scripts/configuracion/theme/components/components.module.js"></script>
+    <script src="../Scripts/configuracion/theme/inputs/inputs.module.js"></script>
+    <script src="../scripts/librerias/angular/smart-table.min.js" type="text/javascript"></script>
+    <script src="../scripts/librerias/angular/underscore.js" type="text/javascript"></script>
+    <script src="../scripts/librerias/angular/select.min.js" type="text/javascript"></script>
+    <script src="../scripts/librerias/angular/angular-money-directive.js" type="text/javascript"></script>
+    <script src="../Scripts/configuracion/customDirectives.js?v=1.1"></script>
+    <script src="../Scripts/configuracion/enums.js"></script>
+   
+    <script src="../scripts/librerias/angular/angularjs-dropdown-multiselect.js" type="text/javascript"></script>
+    <script src="../scripts/librerias/angular/ng-jsgrid.js" type="text/javascript"></script>
+    <script src="../Scripts/utilerias/util.js"></script>
+    <script src="../scripts/librerias/angular/angular-file-upload.min.js" type="text/javascript"></script>
+
+    <script src="../Scripts/utilerias/bind.js"></script>
+    <script src="../Scripts/configuracion/utilities.js"></script>
+    <script src="../Scripts/configuracion/appUtils.js"></script>
+    <script src="../Scripts/utilerias/Magna.Common.js"></script>
+    <script src="../Scripts/utilerias/constraints.js"></script>
+
+
+    <script src="../Scripts/configuracion/theme/theme.config.js"></script>
+    <script src="../Scripts/configuracion/theme/theme.configProvider.js"></script>
+    <script src="../Scripts/configuracion/theme/theme.constants.js"></script>
+    <script src="../Scripts/configuracion/theme/theme.run.js"></script>
+    <script src="../Scripts/configuracion/theme/theme.service.js"></script>
+
+
+    <script src="../Scripts/configuracion/theme/directives/scrollPosition.js"></script>
+    <script src="../Scripts/configuracion/theme/services/baUtil.js"></script>
+    <script src="../Scripts/configuracion/theme/services/preloader.js"></script>
+    <script src="../Scripts/configuracion/theme/services/fileReader.js"></script>
+
+    <script src="../Scripts/configuracion/theme/components/backTop/backTop.directive.js"></script>
+    <script src="../Scripts/configuracion/theme/components/baSidebar/baSidebar.directive.js"></script>
+    <script src="../Scripts/configuracion/theme/components/baSidebar/baSidebar.service.js"></script>
+    <script src="../Scripts/configuracion/theme/components/baSidebar/BaSidebarCtrl.js"></script>
+    <script src="../Scripts/configuracion/theme/components/baSidebar/baSidebarHelpers.directive.js"></script>
+    <script src="../Scripts/configuracion/theme/components/contentTop/contentTop.directive.js"></script>
+    <script src="../Scripts/configuracion/theme/components/msgCenter/msgCenter.directive.js"></script>
+    <script src="../Scripts/configuracion/theme/components/msgCenter/MsgCenterCtrl.js"></script>
+    <script src="../Scripts/configuracion/theme/components/pageTop/pageTop.directive.js"></script>
+    <script src="../Scripts/configuracion/theme/filters/image/profilePicture.js"></script>
+    <script src="../Scripts/configuracion/theme/components/backTop/lib/jquery.backTop.min.js"></script>
+    <script src="../Scripts/pages/masterPageController.js"></script>
+    <script src="../Scripts/librerias/angular-switcher.min.js"></script>
+    
+
+    <link href="../Scripts/librerias/angular-multi-select/isteven-multi-select.css" rel="stylesheet" />
+    <script src="../Scripts/librerias/angular-multi-select/isteven-multi-select.js"></script>
+    <script src="../Scripts/pages/profileController.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div ng-app="app">
+  <div ng-controller="appController as ctrl">
+    <div class="toolbar">
+      <!-- TOOLBAR -->
+      <md-toolbar>
+        <div class="md-toolbar-tools">
+          <md-button class="md-icon-button" aria-label="Menu" ng-show="true" ng-click="ctrl.toggleMainMenu()">
+            <i class="fa fa-bars"></i>
+          </md-button>
+
+          <h2>
+            <span class="app-name">
+              <i class="fa fa-coffee" hide-sm></i>Presto
+            </span>
+          </h2>
+
+          <span flex></span>
+
+          <div class="identification" layout="column">
+            <div class="name">Pedro Álvares Cabral</div>
+            <md-button class="role" ng-click="ctrl.changeRole($event)">
+              <i class="fa fa-refresh"></i> {{ctrl.role}}
+            </md-button>
+          </div>
+
+          <md-button class="md-icon-button toolbar-icon" aria-label="Log out menu" ng-click="ctrl.toggleLogOutMenu($event)">
+            <i class="fa fa-ellipsis-v"></i>
+          </md-button>
+        </div>
+      </md-toolbar>
+
+      <!-- LOG OFF MENU -->
+      <div class="log-out-menu md-whiteframe-z1" ng-class="{'visible': ctrl.logOutMenuVisible}">
+        <md-button class="md-list-item-content" aria-label="Log Out" ng-click="ctrl.logOut()">
+          <i class="fa fa-sign-out"></i>
+          <span class="md-inline-list-icon-label">Log out</span>
+        </md-button>
+      </div>
+
+      <!-- LEFT SIDE MENU -->
+      <section layout="row" flex>
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="menu-left">
+          <md-toolbar></md-toolbar>
+
+          <md-content class="md-padding side-menu">
+            <div class="menu-item" layout="row" layout-align="start center" ng-repeat="view in ctrl.views" ng-class="{'separator': view.separator, 'selected': ctrl.currentView === view.label}" ng-click="ctrl.changeView(view.label)">
+              <i class="fa {{view.icon}} icon-all-requests"></i>
+              <span>{{view.label}}</span>
+            </div>
+          </md-content>
+        </md-sidenav>
+      </section>
+    </div>
+
+   <!--
+       
+   
+-->
+  </div>
+
+  <script type="text/ng-template" id="dialogRole.html">
+    <md-dialog aria-label="Mango (Fruit)">
+      <form>
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h2>Change your role</h2>
+          </div>
+        </md-toolbar>
+        <md-dialog-content style="max-width:800px;max-height:810px; ">
+          <div>
+            <md-radio-group ng-model="selected">
+              <md-radio-button ng-repeat="role in roles" value="{{role}}" class="md-primary">{{role}}</md-radio-button>
+            </md-radio-group>
+          </div>
+        </md-dialog-content>
+
+        <div class="md-actions" layout="row">
+          <md-button ng-click="cancel()" md-autofocus>
+            Cancel
+          </md-button>
+          <span flex></span>
+          <md-button ng-click="select(selected)" style="margin-right:20px;">
+            Select
+          </md-button>
+        </div>
+      </form>
+    </md-dialog>
+  </script>
+</div>
+<!-- partial -->
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angular_material/0.11.0/angular-material.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js'></script>
+<script src="../Scripts/pages/appController.js"></script>
+</body>
+</html>

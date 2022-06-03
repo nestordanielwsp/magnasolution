@@ -13,8 +13,8 @@ namespace CYP
         protected void Page_Load(object sender, EventArgs e)
         {
             var currentPage = Page.Request.Url.ToString();
-            if (currentPage.Contains("quala-tpm.azurewebsites.net"))
-                Response.Redirect("quala-tpm.azurewebsites.net/Pages/Login.aspx");
+            if (currentPage.Contains(""))
+                Response.Redirect("");
         }
     }
 }

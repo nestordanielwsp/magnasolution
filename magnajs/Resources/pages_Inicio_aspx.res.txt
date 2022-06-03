@@ -1,0 +1,39 @@
+﻿Titulo=Fast Response
+TituloGrid=Daily Report
+
+
+btnGuardar=Guardar
+
+gvGeneral-Item=Item
+gvGeneral-FechaInicio=Fecha de Inicio
+gvGeneral-ReportadoPor=Reportado por
+gvGeneral-QuienRespondio=Quien Respondio
+gvGeneral-TipoReclamo=/ Tipo de Reclamo Reclamo de Cliente
+gvGeneral-Modelo=Modelo
+gvGeneral-DescripcionProblema=Descripción del Problema
+gvGeneral->ResponsableRespuesta=Responsable de Respuesta
+gvGeneral-ProximaFecha=Pxoxima Fecha de Respuesta por Responsable
+gvGeneral-PuntoQuiebre=Contención Acciones Inmediatas Punto de Quiebre
+gvGeneral-CausaRaiz=Causa Raiz
+gvGeneral-AccionesCorrectivas=Acciones Correctivas Implementadas
+gvGeneral-QualityFocus=Quality Focus (QFC)
+gvGeneral-Deteccion=/ Poka Yokes Detección 
+gvGeneral-AuditoriaCapas=Auditoria por (LPA)
+gvGeneral-ValidacionAcciones=Validación de Acciones Correctivas
+gvGeneral-PlanControl=/ Plan de Control Actualización AMEF 
+gvGeneral-ActualizacionHIOE=Actualización de HIOE
+gvGeneral-LeccionesAprendidas=Lecciones Aprendidas
+gvGeneral-PlanAccion=/ Contramedidas Plan de Accion 
+gvGeneral-FechaPropuestaCierre=Fecha Propuesta de Cierre
+gvGeneral-FechaRealCierre=Fecha Real de Cierre
+gvGeneral-EstatusGlobal=Estatus Global (R, Y, G)
+gvGeneral-Departamento=Departamento
+gvGeneral-TiempoObjetivo=TIEMPO OBJETIVO, ESTATUS Y FECHA DE TERMINO
+gvGeneral-Completo=Completo
+gvGeneral-NoAplica=No Aplica
+
+msgArchivoNoEncontrado=No se encontro el archivo.
+folderArchivos=Evidencias
+maxFileSize=20
+validExtensions=xlx,xlsx,pdf,doc,docx,png,jpg,jpeg
+lblDescargar=Descargar

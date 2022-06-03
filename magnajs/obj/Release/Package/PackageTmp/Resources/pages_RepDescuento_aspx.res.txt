@@ -1,0 +1,40 @@
+﻿Titulo=Reporte Descuentos
+lblFiltrarPor=Filtrar por:
+lblCanal=Canal
+lblRegion=Región
+lblVendedor=Vendedor
+lblJefeVentas=Jefe Ventas
+lblCuentaContable=Cuenta Contable
+lblTipoDescuento=Tipo de Descuento
+lblConceptoDescuento=Concepto de Descuento
+lblDescuentosPor=Descuentos por:
+lblTotalDescuentoCanal=Total descuentos por Canal
+lblTopClienteDescuento=Top de clientes por descuento
+lblTotalDescuentoTipo=Total descuentos por Tipo
+
+lblTotalGasto=Total Gasto
+lblApoyoVentas=Apoyo a Ventas
+lblContractual=Contractual
+lblExtracontractual=Extracontractual
+lblTotalGeneral=Total General
+
+lblSumabalance=Suma de Balance
+lblCuentaPac=Cuenta PAC
+lblCliente=Cliente
+lblDescuentoCanal=Descuentos por canal
+lblMes=Mes
+
+lblGastoMes=Gasto por Mes
+lblDescripcionCuenta=Descripción Cuenta
+lblCuenta=Cuenta
+lblTotal=Total
+
+lblTodos=Todos
+
+btnAvanzado=Avanzado
+btnActualizar=Actualizar
+btnExcel=Excel
+btnResumen=Resumen
+btnCanalTipo=Canal-Tipo
+btnClienteCuenta=Cliente-Cuenta
+btnCuentaCanal=Cuenta-Canal
