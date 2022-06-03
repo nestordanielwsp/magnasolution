@@ -1,9 +1,0 @@
-﻿Titulo=Catálogo - Flujo Autorización
-
-lblArea=Área
-lblCanal=Canal
-lblMarca=Marca
-lblCargo=Cargo
-lblMonto=A Partir Monto
-lblModificacion = Modificación
-lblTipoModificacion = Tipo modificación

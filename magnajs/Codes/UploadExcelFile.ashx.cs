@@ -183,7 +183,7 @@ namespace magnajs.Codes
                     Stream stream = archivo.InputStream;
                     stream.Position = 0;
 
-                    storage.Guardar(stream, contenedor + rutaArchivo);
+                   // storage.Guardar(stream, contenedor + rutaArchivo);
 
                 }
             }

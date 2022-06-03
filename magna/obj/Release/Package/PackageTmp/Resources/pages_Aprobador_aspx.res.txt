@@ -1,6 +1,0 @@
-﻿Titulo = Aprobadores
-lblUsuarioAprobador = Usuario
-lblNombre = Nombre
-lblDominio = Dominio
-lblActive = Activo
-lblBusquedaAprobador = Búsqueda Aprobador
