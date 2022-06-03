@@ -1,0 +1,15 @@
+﻿Titulo=Catalogo - Evidencias Tipo de Apoyo
+lblFiltrarPor=Filtrar por:
+TipoApoyo=Tipo de Apoyo
+NombreEvidencia=Nombre Evidencia
+Detalle=Detalle
+msgGridSinInformacion=No se encontró información para mostrar.
+lblSelect=Seleccione
+btnVer=Ver
+lblCerrar=Cerrar
+Causal=Causal
+Evidencias=Evidencias
+maxFileSize=20
+validExtensions=xlx,xlsx,pdf,doc,docx,png,jpg,jpeg
+folderArchivos=TipoApoyo
+msgArchivoNoEncontrado=No se encontró el archivo.

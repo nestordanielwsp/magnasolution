@@ -1634,7 +1634,7 @@ namespace CYP.Codes
             esPromocionArmada = tipoSolicitud.ToLower() == "promocion armada";
 
             //if (tipoSolicitud.ToLower() == "promocion configurada")            
-            error = error + (!ws.Cells["C11"].Text.ToLower().Contains("quala (1501)") ? "\nEn promoción configurada/armada la empresa debe ser Quala (1501)" : "");
+            error = error + (!ws.Cells["C11"].Text.ToLower().Contains("Magna (1501)") ? "\nEn promoción configurada/armada la empresa debe ser Magna (1501)" : "");
 
             datos["Empresa"] = ws.Cells["C11"].Text;
 

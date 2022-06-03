@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>Quala</title>
+    <title>Magna</title>
     <link href="../css/login/font-face-login.css" rel="stylesheet" />
     <link href="../css/login/font-awesome.min.css" rel="stylesheet" />
     <link href="../css/login/normalize.min.css" rel="stylesheet" />

@@ -1,11 +1,11 @@
-﻿/// <reference path="Exertus.CommonModule.js" />
+﻿/// <reference path="Empresa.CommonModule.js" />
 /// <reference path="jquery.js" />
 /// <reference path="jQuery.MaskedInputs.js" />
 
-window["Exertus"] = window["Exertus"] || {};
-Exertus.Constraints = Exertus.Constraints || {};
+window["Empresa"] = window["Empresa"] || {};
+Empresa.Constraints = Empresa.Constraints || {};
 
-Exertus.Constraints.Required = {
+Empresa.Constraints.Required = {
     Numeric: false,
     MinLength: 1,
     GlobalMessagePattern: Ex.GetGlobalResourceValue('CampoRequerido') == '' ? 'El campo °human-name° es requerido' : Ex.GetGlobalResourceValue('CampoRequerido'), // "El campo °human-name° es requerido.",
@@ -15,7 +15,7 @@ Exertus.Constraints.Required = {
 }
 
 
-Exertus.Constraints.RequiredGreaterThan0 = {
+Empresa.Constraints.RequiredGreaterThan0 = {
     Numeric: false,
     MinLength: 1,
     MinValue: 1,
@@ -25,7 +25,7 @@ Exertus.Constraints.RequiredGreaterThan0 = {
     ID: "EAB1A454-C90C-4EC8-B9EB-FA9B3F4CFD5B"
 }
 
-Exertus.Constraints.Day = {
+Empresa.Constraints.Day = {
     Numeric: false,
     MinValue: 1,
     Decimals: 0,
@@ -35,7 +35,7 @@ Exertus.Constraints.Day = {
     ID: "EAB1A454-C90C-4EC8-B9EB-FA9B3F4CFD5B"
 }
 
-Exertus.Constraints.Year = {
+Empresa.Constraints.Year = {
     Numeric: false,
     Decimals: 0,
     GlobalMessagePattern: Ex.GetGlobalResourceValue('CampoRequerido'), // "El campo °human-name° es requerido.",
@@ -44,7 +44,7 @@ Exertus.Constraints.Year = {
     ID: "EAB1A454-C90C-4EC8-B9EB-FA9B3F4CFD5B"
 }
 
-Exertus.Constraints.PositiveCurrency = {
+Empresa.Constraints.PositiveCurrency = {
     Numeric: true,
     MinValue: 0,
     Decimals: 2,
@@ -56,7 +56,7 @@ Exertus.Constraints.PositiveCurrency = {
     ID: "2AEEBFD5-2375-4D7A-A6CD-0F68AC1E89F0"
 };
 
-Exertus.Constraints.PositiveCurrencyGreaterThan0 = {
+Empresa.Constraints.PositiveCurrencyGreaterThan0 = {
     Numeric: true,
     MinValue: 1,
     Decimals: 2,
@@ -69,7 +69,7 @@ Exertus.Constraints.PositiveCurrencyGreaterThan0 = {
 };
 
 
-Exertus.Constraints.PositiveCurrencyDecimal6 = {
+Empresa.Constraints.PositiveCurrencyDecimal6 = {
     Numeric: true,
     MinValue: 0,
     Decimals: 6,
@@ -81,7 +81,7 @@ Exertus.Constraints.PositiveCurrencyDecimal6 = {
     ID: "2AEEBFD5-2375-4D7A-A6CD-0F68AC1E89F0"
 };
 
-Exertus.Constraints.PositiveCurrencyDecimal6GreaterThan0 = {
+Empresa.Constraints.PositiveCurrencyDecimal6GreaterThan0 = {
     Numeric: true,
     MinValue: 1,
     Decimals: 6,
@@ -93,7 +93,7 @@ Exertus.Constraints.PositiveCurrencyDecimal6GreaterThan0 = {
     ID: "2AEEBFD5-2375-4D7A-A6CD-0F68AC1E89F0"
 };
 
-Exertus.Constraints.PositiveCurrencyGreaterThan0 = {
+Empresa.Constraints.PositiveCurrencyGreaterThan0 = {
     Numeric: true,
     MinValue: 1,
     Decimals: 2,
@@ -105,7 +105,7 @@ Exertus.Constraints.PositiveCurrencyGreaterThan0 = {
     ID: "2AEEBFD5-2375-4D7A-A6CD-0F68AC1E89F0"
 };
 
-Exertus.Constraints.PositiveIntegers = {
+Empresa.Constraints.PositiveIntegers = {
     Numeric: true,
     MinValue: 0,
     Decimals: 0,
@@ -117,7 +117,7 @@ Exertus.Constraints.PositiveIntegers = {
     ID: "B9AD62F1-DFB1-4765-8A3E-0567D6426C83"
 };
 
-Exertus.Constraints.PositivePercentage = {
+Empresa.Constraints.PositivePercentage = {
     Numeric: true,
     MinValue: 0,
     Decimals: 3,
@@ -129,7 +129,7 @@ Exertus.Constraints.PositivePercentage = {
     ID: "C6F9AAB3-CF9C-4DD7-9298-EF38379EDDC3"
 };
 
-Exertus.Constraints.PositiveIntegersGreaterThan0 = {
+Empresa.Constraints.PositiveIntegersGreaterThan0 = {
     Numeric: true,
     MinValue: 1,
     Decimals: 0,
@@ -144,7 +144,7 @@ Exertus.Constraints.PositiveIntegersGreaterThan0 = {
     DefaultValue: null
 };
 
-Exertus.Constraints.PositiveIntegersGreaterThan5 = {
+Empresa.Constraints.PositiveIntegersGreaterThan5 = {
     Numeric: true,
     MinValue: 5,
     Decimals: 0,
@@ -158,7 +158,7 @@ Exertus.Constraints.PositiveIntegersGreaterThan5 = {
     ID: "889294B2-73CD-42F0-AF5A-AED39B339EB1"
 };
 
-Exertus.Constraints.Email = {
+Empresa.Constraints.Email = {
     Email: true,
     Numeric: false,
     MinLength: 1,
@@ -168,7 +168,7 @@ Exertus.Constraints.Email = {
     ID: "EAB1A454-C90C-4EC8-B9EB-FA9B3F4CFD6B"
 }
 
-Exertus.Constraints.RequiredNumeric = {
+Empresa.Constraints.RequiredNumeric = {
     Numeric: true,
     IsString: true,
     MinValue: 1,
@@ -181,7 +181,7 @@ Exertus.Constraints.RequiredNumeric = {
     ID: "B9AD62F1-DFB1-4765-8A3E-0567D6426C83"
 };
 
-Exertus.Constraints.RequiredAlphaNumeric = {
+Empresa.Constraints.RequiredAlphaNumeric = {
     Numeric: false,
     IsString: true,
     isAlphaNumeric: true,
@@ -196,7 +196,7 @@ Exertus.Constraints.RequiredAlphaNumeric = {
     ID: "94EEE790-E0E2-4A34-9E19-CFC6E8A931F2"
 };
 
-Exertus.Constraints.AlphaNumeric = {
+Empresa.Constraints.AlphaNumeric = {
     Numeric: false,
     IsString: true,
     isAlphaNumeric: true,
@@ -212,7 +212,7 @@ Exertus.Constraints.AlphaNumeric = {
 };
 
 
-Exertus.Constraints.Numeric = {
+Empresa.Constraints.Numeric = {
     Numeric: true,
     IsString: true,
     MinValue: 0,
@@ -225,7 +225,7 @@ Exertus.Constraints.Numeric = {
     ID: "B9AD62F1-DFB1-4765-8A3E-0567D6426C83"
 };
 
-Exertus.Constraints.RequiredAlphabetic = {
+Empresa.Constraints.RequiredAlphabetic = {
     Numeric: false,
     IsString: true,
     isAlphabetic: true,
@@ -240,7 +240,7 @@ Exertus.Constraints.RequiredAlphabetic = {
     ID: "94EEE790-E0E2-4A34-9E19-CFC6E8A931F2"
 };
 
-Exertus.ValidateConstraint = function (field) {
+Empresa.ValidateConstraint = function (field) {
 
     var constraint = field.DataConstraint;
     if (constraint == null)
@@ -300,7 +300,7 @@ Exertus.ValidateConstraint = function (field) {
                     TitleBehavior: true
                 };
 
-                theField.ConstraintTooltip = new Exertus.AnchoredTooltip(theField, label, innerConfig);
+                theField.ConstraintTooltip = new Empresa.AnchoredTooltip(theField, label, innerConfig);
             }
         }
 
@@ -358,12 +358,12 @@ Exertus.ValidateConstraint = function (field) {
     return { Valid: true };
 }
 
-Exertus.ClearConstraintStyle = function (field) {
+Empresa.ClearConstraintStyle = function (field) {
     var constraintName = field.getAttribute("data-constraint");
     if (constraintName == null)
         return;
 
-    var constraint = Exertus.Constraints[constraintName];
+    var constraint = Empresa.Constraints[constraintName];
     if (constraint == null)
         return;
 
@@ -388,12 +388,12 @@ Exertus.ClearConstraintStyle = function (field) {
     }
 }
 
-Exertus.SetConstraint = function (field) {
+Empresa.SetConstraint = function (field) {
     var constraintName = field.getAttribute("data-constraint");
     if (constraintName == null)
         return;
 
-    var constraint = Exertus.Constraints[constraintName];
+    var constraint = Empresa.Constraints[constraintName];
     if (constraint == null)
         return;
 

@@ -48,15 +48,7 @@ namespace CYP.Pages
         {
             if (!this.IsPostBack)
             {
-                var currentPage = Page.Request.Url.ToString();
-                var localDevelpment = Convert.ToBoolean(ConfigurationManager.AppSettings["LocalSite"]);
-
-                if (!localDevelpment && !currentPage.Contains("quala-tpm.azurewebsites.net"))
-                    Response.Redirect("~/Default.aspx");
-
-                /* */
-                if (!String.IsNullOrEmpty(WebConfigurationManager.AppSettings["UserPrueba"]))
-                    this.txtUsuario.Value = Convert.ToString(WebConfigurationManager.AppSettings["UserPrueba"]);
+               
             }
         }
 

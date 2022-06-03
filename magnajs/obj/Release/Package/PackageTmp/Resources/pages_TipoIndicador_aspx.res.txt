@@ -1,0 +1,3 @@
+﻿Titulo=Catálogos – Tipos de Indicadores
+
+lblIndicador=Indicador

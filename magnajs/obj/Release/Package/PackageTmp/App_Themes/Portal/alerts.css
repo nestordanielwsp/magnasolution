@@ -1,0 +1,154 @@
+﻿
+#popup_container {
+    min-width: 300px;
+    max-width: 450px;
+    background: #FFF;
+    border: solid 1px #ccc;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.alert_title {
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    /*font-size:12px;*/
+}
+
+.alert_content {
+    min-height: 60px;
+    max-height: 250px;
+    padding-top: 10px !important;
+}
+
+.alert_footer {
+    /*background-color:#f5f5f5;*/
+    padding: 5px;
+    text-align: center;
+    /*border-top: 1px solid #eeeeee;*/
+}
+
+.alert_title_error {
+    color: #da4f49 !important;
+    /* background-color:#fdf0ef !important;  */
+    border-bottom: 1px solid #da4f49;
+}
+
+.alert_title_information {
+    color: #0069af !important;
+    /* background-color:#7fb4fb !important; */
+    border-bottom: 1px solid #0069af;
+}
+
+.alert_title_warning {
+    color: #e8a410 !important;
+    /* background-color:#ffdd95 !important; */
+    border-bottom: 1px solid #e8a410;
+}
+
+.alert_title_confirmation {
+    color: #363636 !important;
+    border-bottom: 1px solid #363636;
+}
+
+.btn-alert {
+    padding: 6px 12px !important;
+}
+
+#popup_message {
+    max-height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*
+#popup_title { 
+	padding:5px 5px 0px;
+    font-size:14px;
+}
+
+
+
+#popup_content .alabel {
+    font-weight:normal !important;
+    cursor:pointer;
+    padding-left:6px;
+    padding-right:6px;
+    padding-bottom:4px;
+    padding-top:4px;
+    border: 1px solid #808080;
+}
+
+
+
+
+
+#popup_panel {
+	text-align: center;
+	padding:5px 5px 5px !important; 
+	background-color: #f5f5f5; 
+    color:#333 !important;
+	padding: 0em;
+	margin: 0em; 
+    border-top:1px solid #017232; 
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+}
+*/
+
+
+.alert {
+    /* padding:0px !important; */
+    background-color: #fff !important;
+    margin-bottom: 0px !important;
+}
+
+    .alert, .alert h4 {
+        color: #808080 !important;
+    }
+
+.TOOLTIPO_ROW {
+    outline: none;
+}
+
+    .TOOLTIPO_ROW strong {
+        line-height: 30px;
+    }
+
+    .TOOLTIPO_ROW:hover {
+        text-decoration: none;
+    }
+
+    .TOOLTIPO_ROW span {
+        z-index: 10;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 28px;
+        width: 300px;
+        line-height: 16px;
+    }
+
+    .TOOLTIPO_ROW:hover span {
+        display: inline;
+        position: absolute;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+.callout {
+    z-index: 20;
+    position: absolute;
+    top: 30px;
+    border: 0;
+    left: -12px;
+}
+
+/*CSS3 extras*/
+.TOOLTIPO_ROW span {
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px #CCC;
+}

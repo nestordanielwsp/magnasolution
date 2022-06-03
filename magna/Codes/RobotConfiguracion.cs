@@ -1198,7 +1198,7 @@ namespace CYP.Codes
 	                            {'Campo': 'UnidadPorDisplay', 'Posicion': '17', 'TipoDato': 'int'},
 	                            {'Campo': 'Contenido', 'Posicion': '18', 'TipoDato': 'decimal'},
 	                            {'Campo': 'Densidad', 'Posicion': '19', 'TipoDato': 'decimal'},
-	                            {'Campo': 'UsoImpuestoQuala', 'Posicion': '20', 'TipoDato': ''},
+	                            {'Campo': 'UsoImpuestoMagna', 'Posicion': '20', 'TipoDato': ''},
 	                            {'Campo': 'UsoImpuestoComex', 'Posicion': '21', 'TipoDato': ''},
 	                            {'Campo': 'ActiveString', 'Posicion': '22', 'TipoDato': ''},
 	                            {'Campo': 'Subcuenta', 'Posicion': '24', 'TipoDato': ''},

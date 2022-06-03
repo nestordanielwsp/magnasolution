@@ -1,0 +1,8 @@
+﻿<select class="form-control"
+    ng-model="Caracteristica.Valor"
+    ng-options="Catalogo.Id as Catalogo.Nombre for Catalogo in Caracteristica.CatalogoItems"
+    ng-disabled="Caracteristica.Disable"
+    ng-required="Caracteristica.EsObligatorio">
+    <option value="">---Seleccione---</option>
+</select>
+

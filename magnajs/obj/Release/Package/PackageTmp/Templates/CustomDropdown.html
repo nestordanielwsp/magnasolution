@@ -1,0 +1,11 @@
+﻿<ui-select ng-model="Caracteristica.JsonValor" theme="select2" style="width: 100%" required="Caracteristica.EsObligatorio" ng-disabled="Caracteristica.Disable">
+        <ui-select-match>
+            {{$select.selected.Nombre || $select.selected}}
+        </ui-select-match>
+        <ui-select-choices repeat="Catalogo in Caracteristica.CatalogoItems | filter: $select.search"
+                           refresh="ServicebuscarPor($select.search, Caracteristica)" refresh-delay="400">
+            <spam>No.</spam>&nbsp;<spam ng-bind-html="Catalogo.Id | highlight: $select.search"></spam>
+            <div ng-bind-html="Catalogo.Nombre | highlight: $select.search"></div>
+        </ui-select-choices>
+    </ui-select>
+

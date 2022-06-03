@@ -1,0 +1,5 @@
+﻿Titulo=Catálogos – Flujo Provisiones
+
+lblRubro=Rubro
+lblUsuario=Usuario
+msgErrorGuardar = No se puede guardar un mismo usuario con diferente orden.

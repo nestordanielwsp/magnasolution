@@ -25,18 +25,13 @@ namespace CYP.Pages
 
         [WebMethod(EnableSession = true)]
         [ScriptMethod]
-        static public Dictionary<string, object> GetInfromacion(Dictionary<string, object> datos)
+        static public Dictionary<string, object> GetInformacion(Dictionary<string, object> datos)
         {
             var page = new logic.BasePage();
             var a = new logic_acces(ConexionDB);
             var response = new Dictionary<string, object>();
 
             var dt = a.ExecuteQuery("Dashboard_Sel", datos);
-            response["Resumen"] = page.DataTableToMap(dt.Tables[0]);
-            response["VentasMarca"] = page.DataTableToMap(dt.Tables[1]);
-            response["VentasCanal"] = page.DataTableToMap(dt.Tables[2]);
-            response["CanalModerno"] = page.DataTableToMap(dt.Tables[3]);
-            response["CanalTradicional"] = page.DataTableToMap(dt.Tables[4]);
 
             return response;
         }
