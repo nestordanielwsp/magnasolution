@@ -36,7 +36,7 @@ namespace magnajs.Codes
                 datos["EsNuevo"] = true;
 
                 rutaArchivo += nombreArchivo;
-                storage.Guardar(archivo.InputStream, rutaArchivo);
+               // storage.Guardar(archivo.InputStream, rutaArchivo);
             }
             catch (Exception ex)
             {

@@ -127,7 +127,7 @@
                                         </ex-fileupload>
                             </td>
                             <td st-ratio="70" class="text-center">{{item.causa_raiz}}&nbsp;
-                                        <ex-fileupload ng-model="item.punto_quiebreNuevo" image-button="fa-upload"
+                                        <ex-fileupload ng-model="item.causa_raizNuevo" image-button="fa-upload"
                                          download-button="fa-paperclip" on-success="setParametrosArchivo(response, item)"
                                          options="fileOptionsDetalle" parameters="fileParameters" open-file="openDocumento(item)">
                                         </ex-fileupload>
