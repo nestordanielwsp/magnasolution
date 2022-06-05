@@ -35,7 +35,7 @@ function DialogRolesController($scope, $mdDialog, RolesService) {
         $mdDialog.hide(role);
     };
 }
-
+ 
 angular.module('app')
     .factory('ViewsService', function () {
         var _views = [
@@ -129,6 +129,8 @@ angular.module('app')
         ctrl.currentView = ViewsService.getCurrent();
         ctrl.role = RolesService.getRole();
         ctrl.usuarioLogeado = false;
+        ctrl.modaltipocambio = {};
+        ctrl.Usuario = "daneil almaguer";
 
         function _showLogOutMenu() {
             ctrl.logOutMenuVisible = true;
@@ -146,6 +148,7 @@ angular.module('app')
 
         ctrl.toggleMainMenu = function () {
             $mdSidenav('menu-left').toggle();
+            console.log("Golasssssssssssss");
         };
 
         ctrl.toggleLogOutMenu = function (event) {
@@ -176,4 +179,26 @@ angular.module('app')
             ctrl.currentView = view;
             ctrl.toggleMainMenu();
         }
+         
+        ctrl.logIn = function (event) {
+            $mdDialog.show({
+                controller: DialogRolesController,
+                templateUrl: 'dialogRole.html',
+                parent: angular.element(document.body),
+                targetEvent: event,
+                clickOutsideToClose: true
+            })
+                .then(function (role) {
+                    ctrl.role = role;
+                });
+        };
+
+        ctrl.logOut = function () {
+            console.log("logOut");
+        };
+
+        ctrl.getUsuario = function () {
+            return Usuario;
+        }
+
     });

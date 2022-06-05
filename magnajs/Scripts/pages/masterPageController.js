@@ -17,7 +17,7 @@
         $rootScope.$on("ImagenPerfil", function (w, h) {
             root.ImagenPErfil = h.value;
         });
-
+         
         root.ImagenPErfil = ImgPerfil ? ImgPerfil : null;
         $Ex.Http = $http;
 
@@ -50,20 +50,7 @@
         $scope.getUsuario = function () {
             return Usuario;
         }
-        //$Ex.Http = $http;
-        //$scope.menus = [];
-        //var esInicio = $location.absUrl().indexOf("Inicio.aspx") >= 0;
-        //if (esInicio) {
-        //    try {
-        //        Ex.load(true);
-        //        $Ex.Execute("GetMenu", {}, function (response) {
-        //            $scope.menus = response.d;
-        //        });
-        //    } catch (ex) {
-        //        Ex.mensajes(ex.message, 4);
-        //        Ex.load(false);
-        //    }
-        //}
+
     }
 
 })();
