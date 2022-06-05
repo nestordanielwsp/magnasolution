@@ -28,7 +28,7 @@ namespace magnajs.Codes
                 var nombreArchivo = archivo.FileName;
                 var folder = context.Request["Folder"];
                 var rutaArchivo = ConfigurationManager.AppSettings["CarpetaArchivos"] + folder + "/";
-
+  
                 datos["UID"] = Guid.NewGuid().ToString().Substring(1, 7) + "_";
                 datos["NombreArchivo"] = nombreArchivo;
                 nombreArchivo = datos["UID"] + nombreArchivo;
@@ -36,7 +36,11 @@ namespace magnajs.Codes
                 datos["EsNuevo"] = true;
 
                 rutaArchivo += nombreArchivo;
-               // storage.Guardar(archivo.InputStream, rutaArchivo);
+                string folderName = AppDomain.CurrentDomain.BaseDirectory;
+                var root = Path.Combine(folderName,rutaArchivo);
+                 
+                File.WriteAllBytes(root, archivo.InputStream.ReadAllBytes());
+                // storage.Guardar(archivo.InputStream, rutaArchivo);
             }
             catch (Exception ex)
             {

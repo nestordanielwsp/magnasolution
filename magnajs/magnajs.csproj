@@ -185,6 +185,7 @@
     <Content Include="images\usuarios\soledad_martinez.jpg" />
     <Content Include="images\word.png" />
     <Content Include="Pages\Ayuda.aspx" />
+    <Content Include="Pages\FastResponse.aspx" />
     <Content Include="Pages\index.html" />
     <Content Include="Pages\Menu\searchableMultiselect.html" />
     <Content Include="Pages\Profile.aspx" />
@@ -1726,6 +1727,13 @@
     <Compile Include="Pages\Ayuda.aspx.designer.cs">
       <DependentUpon>Ayuda.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\FastResponse.aspx.cs">
+      <DependentUpon>FastResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FastResponse.aspx.designer.cs">
+      <DependentUpon>FastResponse.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1824,6 +1832,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\img\theme\" />
+    <Folder Include="Documentos\Evidencias\" />
     <Folder Include="Pages\DocumentosAmbientePruebas\" />
     <Folder Include="Service References\" />
   </ItemGroup>
